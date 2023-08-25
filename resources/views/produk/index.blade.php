@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('title')
-    Daftar Produk
+Daftar Produk
 @endsection
 
 @section('breadcrumb')
-    @parent
-    <li class="active">Daftar Produk</li>
+@parent
+<li class="active">Daftar Produk</li>
 @endsection
 
 @section('content')
@@ -23,7 +23,7 @@
             <div class="box-body table-responsive">
                 <form action="" method="post" class="form-produk">
                     @csrf
-                    <table class="table table-stiped table-bordered">
+                    <table class="table table-stiped table-bordered" id="table-product">
                         <thead>
                             <th width="5%">
                                 <input type="checkbox" name="select_all" id="select_all">
@@ -32,6 +32,7 @@
                             <th>Kode</th>
                             <th>Nama</th>
                             <th>Kategori</th>
+                            <th>Satuan</th>
                             <th>Merk</th>
                             <th>Harga Beli</th>
                             <th>Harga Jual</th>
@@ -53,32 +54,62 @@
 <script>
     let table;
 
-    $(function () {
-        table = $('.table').DataTable({
+    $(function() {
+        table = $('#table-product').DataTable({
             responsive: true,
             processing: true,
             serverSide: true,
             autoWidth: false,
             ajax: {
-                url: '{{ route('produk.data') }}',
+                url: "{{ route('produk.data') }}",
             },
-            columns: [
-                {data: 'select_all', searchable: false, sortable: false},
-                {data: 'DT_RowIndex', searchable: false, sortable: false},
-                {data: 'kode_produk'},
-                {data: 'nama_produk'},
-                {data: 'nama_kategori'},
-                {data: 'merk'},
-                {data: 'harga_beli'},
-                {data: 'harga_jual'},
-                {data: 'diskon'},
-                {data: 'stok'},
-                {data: 'aksi', searchable: false, sortable: false},
+            columns: [{
+                    data: 'select_all',
+                    searchable: false,
+                    sortable: false
+                },
+                {
+                    data: 'DT_RowIndex',
+                    searchable: false,
+                    sortable: false
+                },
+                {
+                    data: 'kode_produk'
+                },
+                {
+                    data: 'nama_produk'
+                },
+                {
+                    data: 'nama_kategori'
+                },
+                {
+                    data: 'satuan'
+                },
+                {
+                    data: 'merk'
+                },
+                {
+                    data: 'harga_beli'
+                },
+                {
+                    data: 'harga_jual'
+                },
+                {
+                    data: 'diskon'
+                },
+                {
+                    data: 'stok'
+                },
+                {
+                    data: 'aksi',
+                    searchable: false,
+                    sortable: false
+                },
             ]
         });
 
-        $('#modal-form').validator().on('submit', function (e) {
-            if (! e.preventDefault()) {
+        $('#modal-form').validator().on('submit', function(e) {
+            if (!e.preventDefault()) {
                 $.post($('#modal-form form').attr('action'), $('#modal-form form').serialize())
                     .done((response) => {
                         $('#modal-form').modal('hide');
@@ -91,7 +122,7 @@
             }
         });
 
-        $('[name=select_all]').on('click', function () {
+        $('[name=select_all]').on('click', function() {
             $(':checkbox').prop('checked', this.checked);
         });
     });
@@ -124,6 +155,22 @@
                 $('#modal-form [name=harga_jual]').val(response.harga_jual);
                 $('#modal-form [name=diskon]').val(response.diskon);
                 $('#modal-form [name=stok]').val(response.stok);
+
+                var tbody = $('#table-stock-card tbody'),
+                    props = [
+                        "tanggal",
+                        "masuk",
+                        "keluar"
+                    ],
+                    reservation = response.history;
+                $.each(reservation, function(i, reservation) {
+                    var tr = $('<tr>');
+                    $.each(props, function(i, prop) {
+                        console.log(reservation[prop] ?? 0);
+                        $('<td>').html(reservation[prop] ?? 0).appendTo(tr);
+                    });
+                    tbody.append(tr);
+                });
             })
             .fail((errors) => {
                 alert('Tidak dapat menampilkan data');

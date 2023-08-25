@@ -1,16 +1,15 @@
 <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form">
     <div class="modal-dialog modal-lg" role="document">
-        <form action="" method="post" class="form-horizontal">
-            @csrf
-            @method('post')
+        <div class="modal-content">
 
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title"></h4>
-                </div>
-                <div class="modal-body">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" class="form-horizontal">
+                    @csrf
+                    @method('post')
                     <div class="form-group row">
                         <label for="nama_produk" class="col-lg-2 col-lg-offset-1 control-label">Nama</label>
                         <div class="col-lg-6">
@@ -25,6 +24,18 @@
                                 <option value="">Pilih Kategori</option>
                                 @foreach ($kategori as $key => $item)
                                 <option value="{{ $key }}">{{ $item }}</option>
+                                @endforeach
+                            </select>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="satuan" class="col-lg-2 col-lg-offset-1 control-label">Kategori</label>
+                        <div class="col-lg-6">
+                            <select name="satuan" id="satuan" class="form-control" required>
+                                <option value="">Pilih Satuan</option>
+                                @foreach ($satuan as $key => $item)
+                                <option value="{{ $item }}">{{ $item }}</option>
                                 @endforeach
                             </select>
                             <span class="help-block with-errors"></span>
@@ -65,12 +76,25 @@
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i> Simpan</button>
-                    <button type="button" class="btn btn-sm btn-flat btn-warning" data-dismiss="modal"><i class="fa fa-arrow-circle-left"></i> Batal</button>
-                </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i> Simpan</button>
+                        <button type="button" class="btn btn-sm btn-flat btn-warning" data-dismiss="modal"><i class="fa fa-arrow-circle-left"></i> Batal</button>
+                    </div>
+                </form>
+
+                <li class="active">Kartu Stok BUlan Ini</li>
+                <table class="table table-bordered" id="table-stock-card">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tanggal</th>
+                            <th scope="col">Debet</th>
+                            <th scope="col">Credit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
-        </form>
+        </div>
     </div>
 </div>

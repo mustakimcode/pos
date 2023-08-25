@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Kategori;
 use Illuminate\Http\Request;
 use App\Models\Produk;
+use Illuminate\Support\Facades\DB;
 use PDF;
+use App\Models\Satuan;
 
 class ProdukController extends Controller
 {
@@ -17,8 +19,9 @@ class ProdukController extends Controller
     public function index()
     {
         $kategori = Kategori::all()->pluck('nama_kategori', 'id_kategori');
+        $satuan = Satuan::all()->pluck('nama', 'id');
 
-        return view('produk.index', compact('kategori'));
+        return view('produk.index', compact('kategori','satuan'));
     }
 
     public function data()
@@ -33,11 +36,11 @@ class ProdukController extends Controller
             ->addIndexColumn()
             ->addColumn('select_all', function ($produk) {
                 return '
-                    <input type="checkbox" name="id_produk[]" value="'. $produk->id_produk .'">
+                    <input type="checkbox" name="id_produk[]" value="' . $produk->id_produk . '">
                 ';
             })
             ->addColumn('kode_produk', function ($produk) {
-                return '<span class="label label-success">'. $produk->kode_produk .'</span>';
+                return '<span class="label label-success">' . $produk->kode_produk . '</span>';
             })
             ->addColumn('harga_beli', function ($produk) {
                 return format_uang($produk->harga_beli);
@@ -51,8 +54,8 @@ class ProdukController extends Controller
             ->addColumn('aksi', function ($produk) {
                 return '
                 <div class="btn-group">
-                    <button type="button" onclick="editForm(`'. route('produk.update', $produk->id_produk) .'`)" class="btn btn-xs btn-info btn-flat"><i class="fa fa-pencil"></i></button>
-                    <button type="button" onclick="deleteData(`'. route('produk.destroy', $produk->id_produk) .'`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
+                    <button type="button" onclick="editForm(`' . route('produk.update', $produk->id_produk) . '`)" class="btn btn-xs btn-info btn-flat"><i class="fa fa-pencil"></i></button>
+                    <button type="button" onclick="deleteData(`' . route('produk.destroy', $produk->id_produk) . '`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
                 </div>
                 ';
             })
@@ -79,7 +82,7 @@ class ProdukController extends Controller
     public function store(Request $request)
     {
         $produk = Produk::latest()->first() ?? new Produk();
-        $request['kode_produk'] = 'P'. tambah_nol_didepan((int)$produk->id_produk +1, 6);
+        $request['kode_produk'] = 'P' . tambah_nol_didepan((int)$produk->id_produk + 1, 6);
 
         $produk = Produk::create($request->all());
 
@@ -95,8 +98,43 @@ class ProdukController extends Controller
     public function show($id)
     {
         $produk = Produk::find($id);
+        $historyStockPenjualan = DB::table('produk')
+            ->select(
+                DB::raw('DATE(penjualan_detail.created_at) as tanggal'),
+                DB::raw('sum(penjualan_detail.jumlah) as keluar')
+            )
+            ->join('penjualan_detail', 'penjualan_detail.id_produk', '=', 'produk.id_produk')
+            ->where('produk.id_produk', $produk->id_produk)
+            ->groupBy(DB::raw('DATE(penjualan_detail.created_at)'))
+            ->get();
+        $historyStockPembelian = DB::table('produk')
+            ->select(
+                DB::raw('DATE(pembelian_detail.created_at) as tanggal'),
+                DB::raw('sum(pembelian_detail.jumlah) as masuk')
+            )
+            ->join('pembelian_detail', 'pembelian_detail.id_produk', '=', 'produk.id_produk')
+            ->where('produk.id_produk', $produk->id_produk)
+            ->groupBy(DB::raw('DATE(pembelian_detail.created_at)'))
+            ->get();
 
-        return response()->json($produk);
+        $history = [];
+
+        foreach ($historyStockPenjualan as $key => $penjualan) {
+            $historyDump = $penjualan;
+            foreach ($historyStockPembelian as $key => $pembelian) {
+                if ($penjualan->tanggal == $pembelian->tanggal) {
+                    $historyDump->masuk = $pembelian->masuk;
+                }
+            }
+
+            $history[] = $historyDump;
+        }
+
+        $output = $produk->toArray();
+        $output["history"] = $history;
+
+
+        return response()->json($output);
     }
 
     /**

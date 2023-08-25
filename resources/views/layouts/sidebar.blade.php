@@ -12,7 +12,7 @@
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
-        
+
         <!-- /.search form -->
         <!-- sidebar menu: : style can be found in sidebar.less -->
         <ul class="sidebar-menu" data-widget="tree">
@@ -58,11 +58,6 @@
             <li>
                 <a href="{{ route('penjualan.index') }}">
                     <i class="fa fa-upload"></i> <span>Penjualan</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('transaksi.index') }}">
-                    <i class="fa fa-cart-arrow-down"></i> <span>Transaksi Aktif</span>
                 </a>
             </li>
             <li>
