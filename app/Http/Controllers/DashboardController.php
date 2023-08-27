@@ -10,6 +10,7 @@ use App\Models\Penjualan;
 use App\Models\Produk;
 use App\Models\Supplier;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
@@ -41,8 +42,19 @@ class DashboardController extends Controller
 
         $tanggal_awal = date('Y-m-01');
 
+         $historyPenjualan = DB::table('produk')
+            ->select(
+                'penjualan_detail.*',
+                DB::raw('TIME(penjualan_detail.created_at) as time'),
+                'produk.nama_produk'
+            )
+            ->join('penjualan_detail', 'penjualan_detail.id_produk', '=', 'produk.id_produk')
+            ->whereRaw('Date(penjualan_detail.created_at) = CURDATE()')
+            ->orderBy('penjualan_detail.id_penJualan','desc')
+            ->get();
+
         if (auth()->user()->level == 1) {
-            return view('admin.dashboard', compact('kategori', 'produk', 'supplier', 'member', 'tanggal_awal', 'tanggal_akhir', 'data_tanggal', 'data_pendapatan'));
+            return view('admin.dashboard', compact('kategori', 'produk', 'supplier', 'member', 'tanggal_awal', 'tanggal_akhir', 'data_tanggal', 'data_pendapatan', 'historyPenjualan'));
         } else {
             return view('kasir.dashboard');
         }

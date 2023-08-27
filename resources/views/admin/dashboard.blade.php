@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('title')
-    Dashboard
+Dashboard
 @endsection
 
 @section('breadcrumb')
-    @parent
-    <li class="active">Dashboard</li>
+@parent
+<li class="active">Dashboard</li>
 @endsection
 
 @section('content')
@@ -93,6 +93,60 @@
                     </div>
                 </div>
                 <!-- /.row -->
+            </div>
+
+
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Penjualan {{tanggal_indonesia(date('Y-m-d'), false)}}</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="box-body table-responsive">
+                                <table class="table table-stiped table-bordered">
+                                    <thead>
+                                        <th width="5%">Order No</th>
+                                        <th>Jam</th>
+                                        <th>Obat</th>
+                                        <th>Jumlah</th>
+                                        <th>Harga</th>
+                                        <th>SubTotal</th>
+                                        <th>Diskon</th>
+                                    </thead>
+                                    <tbody>
+                                        <?php $totalPenjualan = 0 ?>
+                                        @foreach($historyPenjualan as $key => $penjualan)
+                                        <tr>
+                                            <td>{{$penjualan->id_penjualan}}</td>
+                                            <td>{{date("H:i", strtotime($penjualan->time))}}</td>
+                                            <td>{{$penjualan->nama_produk}}</td>
+                                            <td>{{$penjualan->jumlah}}</td>
+                                            <td>{{$penjualan->harga_jual}}</td>
+                                            <td>{{$penjualan->subtotal}}</td>
+                                            <td>{{$penjualan->diskon}}</td>
+                                        </tr>
+                                        <?php $totalPenjualan += $penjualan->subtotal ?>
+                                        @endforeach
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="font-size: 24px;">Total Penjualan</td>
+                                            <td style="font-size: 24px;">{{$totalPenjualan}}</td>
+                                            <td></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
             </div>
         </div>
         <!-- /.box -->
