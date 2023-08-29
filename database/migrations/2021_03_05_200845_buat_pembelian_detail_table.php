@@ -20,6 +20,8 @@ class BuatPembelianDetailTable extends Migration
             $table->integer('harga_beli');
             $table->integer('jumlah');
             $table->integer('subtotal');
+            $table->string('batch')->nullable();
+            $table->date('expired_date')->nullable();
             $table->timestamps();
         });
     }

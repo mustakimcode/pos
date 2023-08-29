@@ -22,6 +22,8 @@ class BuatProdukTable extends Migration
             $table->tinyInteger('diskon')->default(0);
             $table->integer('harga_jual');
             $table->integer('stok');
+            $table->date('expired_date');
+            $table->string('satuan')->nullable();
             $table->timestamps();
         });
     }

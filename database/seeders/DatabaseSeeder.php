@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             UserTableSeeder::class,
             SatuanTableSeeder::class,
             CategoryTableSeeder::class,
+            ProdukTableSeeder::class,
         ]);
     }
 }
