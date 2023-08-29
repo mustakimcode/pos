@@ -37,8 +37,10 @@ class PembelianDetailController extends Controller
             $row = array();
             $row['sku'] = '<span class="label label-success">' . $item->produk['sku'] . '</span';
             $row['name'] = $item->produk['name'];
-            $row['harga_beli']  = 'Rp. ' . format_uang($item->harga_beli);
+            $row['batch'] =       '<input type="text" class="form-control input-sm batch" data-id="' . $item->id_pembelian_detail . '"  value="' . $item->batch . '">';
             $row['jumlah']      = '<input type="number" class="form-control input-sm quantity" data-id="' . $item->id_pembelian_detail . '" value="' . $item->jumlah . '">';
+            $row['expired_date']      = '<input type="date" class="form-control input-sm expired_date" data-id="' . $item->id_pembelian_detail . '" value="' . date("m/d/Y",strtotime($item->expired_date)) . '">';
+            $row['harga_beli']  = 'Rp. ' . format_uang($item->harga_beli);
             $row['subtotal']    = 'Rp. ' . format_uang($item->subtotal);
             $row['aksi']        = '<div class="btn-group">
                                     <button onclick="deleteData(`' . route('pembelian_detail.destroy', $item->id_pembelian_detail) . '`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
@@ -54,7 +56,9 @@ class PembelianDetailController extends Controller
                 <div class="total_item hide">' . $total_item . '</div>',
             'name' => '',
             'harga_beli'  => '',
+            'batch'      => '',
             'jumlah'      => '',
+            'expired_date'      => '',
             'subtotal'    => '',
             'aksi'        => '',
         ];
@@ -62,7 +66,7 @@ class PembelianDetailController extends Controller
         return datatables()
             ->of($data)
             ->addIndexColumn()
-            ->rawColumns(['aksi', 'sku', 'jumlah'])
+            ->rawColumns(['aksi', 'sku', 'jumlah', 'batch', 'expired_date'])
             ->make(true);
     }
 
@@ -87,8 +91,18 @@ class PembelianDetailController extends Controller
     public function update(Request $request, $id)
     {
         $detail = PembelianDetail::find($id);
-        $detail->jumlah = $request->jumlah;
-        $detail->subtotal = $detail->harga_beli * $request->jumlah;
+        if ($request->jumlah) {
+            $detail->jumlah = $request->jumlah;
+        }
+        if ($request->batch) {
+            $detail->batch = $request->batch;
+        }
+        if ($request->expired_date) {
+            $detail->expired_date = $request->expired_date;
+        }
+        if ($detail->harga_beli * $request->jumlah) {
+            $detail->subtotal = $detail->harga_beli * $request->jumlah;
+        }
         $detail->update();
     }
 

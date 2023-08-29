@@ -81,6 +81,8 @@
                         <th>Kode</th>
                         <th>Nama</th>
                         <th>Harga</th>
+                        <th>Batch</th>
+                        <th>Expired Date</th>
                         <th width="15%">Jumlah</th>
                         <th>Subtotal</th>
                         <th width="15%"><i class="fa fa-cog"></i></th>
@@ -153,6 +155,8 @@
                 {data: 'sku'},
                 {data: 'name'},
                 {data: 'harga_beli'},
+                {data: 'batch'},
+                {data: 'expired_date'},
                 {data: 'jumlah'},
                 {data: 'subtotal'},
                 {data: 'aksi', searchable: false, sortable: false},
@@ -185,6 +189,46 @@
                     '_token': $('[name=csrf-token]').attr('content'),
                     '_method': 'put',
                     'jumlah': jumlah
+                })
+                .done(response => {
+                    $(this).on('mouseout', function () {
+                        table.ajax.reload(() => loadForm($('#diskon').val()));
+                    });
+                })
+                .fail(errors => {
+                    alert('Tidak dapat menyimpan data');
+                    return;
+                });
+        });
+
+        $(document).on('input', '.batch', function () {
+            let id = $(this).data('id');
+            let batch = $(this).val();
+
+            $.post(`{{ url('/pembelian_detail') }}/${id}`, {
+                    '_token': $('[name=csrf-token]').attr('content'),
+                    '_method': 'put',
+                    'batch': batch
+                })
+                .done(response => {
+                    $(this).on('mouseout', function () {
+                        table.ajax.reload(() => loadForm($('#diskon').val()));
+                    });
+                })
+                .fail(errors => {
+                    alert('Tidak dapat menyimpan data');
+                    return;
+                });
+        });
+
+        $(document).on('input', '.expired_date', function () {
+            let id = $(this).data('id');
+            let expired_date = $(this).val();
+
+            $.post(`{{ url('/pembelian_detail') }}/${id}`, {
+                    '_token': $('[name=csrf-token]').attr('content'),
+                    '_method': 'put',
+                    'expired_date': expired_date
                 })
                 .done(response => {
                     $(this).on('mouseout', function () {
