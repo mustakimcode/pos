@@ -104,11 +104,11 @@ class PenjualanController extends Controller
         return datatables()
             ->of($detail)
             ->addIndexColumn()
-            ->addColumn('kode_produk', function ($detail) {
-                return '<span class="label label-success">'. $detail->produk->kode_produk .'</span>';
+            ->addColumn('sku', function ($detail) {
+                return '<span class="label label-success">'. $detail->produk->sku .'</span>';
             })
-            ->addColumn('nama_produk', function ($detail) {
-                return $detail->produk->nama_produk;
+            ->addColumn('name', function ($detail) {
+                return $detail->produk->name;
             })
             ->addColumn('harga_jual', function ($detail) {
                 return 'Rp. '. format_uang($detail->harga_jual);
@@ -119,7 +119,7 @@ class PenjualanController extends Controller
             ->addColumn('subtotal', function ($detail) {
                 return 'Rp. '. format_uang($detail->subtotal);
             })
-            ->rawColumns(['kode_produk'])
+            ->rawColumns(['sku'])
             ->make(true);
     }
 
@@ -159,7 +159,7 @@ class PenjualanController extends Controller
         $detail = PenjualanDetail::with('produk')
             ->where('id_penjualan', session('id_penjualan'))
             ->get();
-        
+
         return view('penjualan.nota_kecil', compact('setting', 'penjualan', 'detail'));
     }
 

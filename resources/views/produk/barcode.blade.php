@@ -17,13 +17,13 @@
         <tr>
             @foreach ($dataproduk as $produk)
                 <td class="text-center" style="border: 1px solid #333;">
-                    <p>{{ $produk->nama_produk }} - Rp. {{ format_uang($produk->harga_jual) }}</p>
-                    <img src="data:image/png;base64,{{ DNS1D::getBarcodePNG($produk->kode_produk, 'C39') }}" 
-                        alt="{{ $produk->kode_produk }}"
+                    <p>{{ $produk->name }} - Rp. {{ format_uang($produk->harga_jual) }}</p>
+                    <img src="data:image/png;base64,{{ DNS1D::getBarcodePNG($produk->sku, 'C39') }}"
+                        alt="{{ $produk->sku }}"
                         width="180"
                         height="60">
                     <br>
-                    {{ $produk->kode_produk }}
+                    {{ $produk->sku }}
                 </td>
                 @if ($no++ % 3 == 0)
                     </tr><tr>

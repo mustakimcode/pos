@@ -12,14 +12,14 @@ class PembelianController extends Controller
 {
     public function index()
     {
-        $supplier = Supplier::orderBy('nama')->get();
+        $supplier = Supplier::orderBy('name')->get();
 
         return view('pembelian.index', compact('supplier'));
     }
 
     public function data()
     {
-        $pembelian = Pembelian::orderBy('id_pembelian', 'desc')->get();
+        $pembelian = Pembelian::with('supplier')->orderBy('id_pembelian', 'desc')->get();
 
         return datatables()
             ->of($pembelian)
@@ -37,7 +37,7 @@ class PembelianController extends Controller
                 return tanggal_indonesia($pembelian->created_at, false);
             })
             ->addColumn('supplier', function ($pembelian) {
-                return $pembelian->supplier->nama;
+                return $pembelian->supplier->name;
             })
             ->editColumn('diskon', function ($pembelian) {
                 return $pembelian->diskon . '%';
@@ -96,11 +96,11 @@ class PembelianController extends Controller
         return datatables()
             ->of($detail)
             ->addIndexColumn()
-            ->addColumn('kode_produk', function ($detail) {
-                return '<span class="label label-success">'. $detail->produk->kode_produk .'</span>';
+            ->addColumn('sku', function ($detail) {
+                return '<span class="label label-success">'. $detail->produk->sku .'</span>';
             })
-            ->addColumn('nama_produk', function ($detail) {
-                return $detail->produk->nama_produk;
+            ->addColumn('name', function ($detail) {
+                return $detail->produk->name;
             })
             ->addColumn('harga_beli', function ($detail) {
                 return 'Rp. '. format_uang($detail->harga_beli);
@@ -111,7 +111,7 @@ class PembelianController extends Controller
             ->addColumn('subtotal', function ($detail) {
                 return 'Rp. '. format_uang($detail->subtotal);
             })
-            ->rawColumns(['kode_produk'])
+            ->rawColumns(['sku'])
             ->make(true);
     }
 
@@ -120,7 +120,7 @@ class PembelianController extends Controller
         $pembelian = Pembelian::find($id);
         $detail    = PembelianDetail::where('id_pembelian', $pembelian->id_pembelian)->get();
         foreach ($detail as $item) {
-            $produk = Produk::find($item->id_produk);
+            $produk = Produk::find($item->id);
             if ($produk) {
                 $produk->stok -= $item->jumlah;
                 $produk->update();

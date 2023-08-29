@@ -21,23 +21,23 @@
                         <i class="icon fa fa-check"></i> Perubahan berhasil disimpan
                     </div>
                     <div class="form-group row">
-                        <label for="nama_perusahaan" class="col-lg-2 control-label">Nama Perusahaan</label>
+                        <label for="name_perusahaan" class="col-lg-2 control-label">Nama Perusahaan</label>
                         <div class="col-lg-6">
-                            <input type="text" name="nama_perusahaan" class="form-control" id="nama_perusahaan" required autofocus>
+                            <input type="text" name="name_perusahaan" class="form-control" id="name_perusahaan" required autofocus>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="telepon" class="col-lg-2 control-label">Telepon</label>
+                        <label for="telephone" class="col-lg-2 control-label">Telepon</label>
                         <div class="col-lg-6">
-                            <input type="text" name="telepon" class="form-control" id="telepon" required>
+                            <input type="text" name="telephone" class="form-control" id="telephone" required>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="alamat" class="col-lg-2 control-label">Alamat</label>
+                        <label for="address" class="col-lg-2 control-label">Alamat</label>
                         <div class="col-lg-6">
-                            <textarea name="alamat" class="form-control" id="alamat" rows="3" required></textarea>
+                            <textarea name="address" class="form-control" id="address" rows="3" required></textarea>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
@@ -122,20 +122,20 @@
     function showData() {
         $.get('{{ route('setting.show') }}')
             .done(response => {
-                $('[name=nama_perusahaan]').val(response.nama_perusahaan);
-                $('[name=telepon]').val(response.telepon);
-                $('[name=alamat]').val(response.alamat);
+                $('[name=name_perusahaan]').val(response.name_perusahaan);
+                $('[name=telephone]').val(response.telephone);
+                $('[name=address]').val(response.address);
                 $('[name=diskon]').val(response.diskon);
                 $('[name=tipe_nota]').val(response.tipe_nota);
-                $('title').text(response.nama_perusahaan + ' | Pengaturan');
-                
-                let words = response.nama_perusahaan.split(' ');
+                $('title').text(response.name_perusahaan + ' | Pengaturan');
+
+                let words = response.name_perusahaan.split(' ');
                 let word  = '';
                 words.forEach(w => {
                     word += w.charAt(0);
                 });
                 $('.logo-mini').text(word);
-                $('.logo-lg').text(response.nama_perusahaan);
+                $('.logo-lg').text(response.name_perusahaan);
 
                 $('.tampil-logo').html(`<img src="{{ url('/') }}${response.path_logo}" width="200">`);
                 $('.tampil-kartu-member').html(`<img src="{{ url('/') }}${response.path_kartu_member}" width="300">`);

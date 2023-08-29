@@ -14,10 +14,10 @@ class BuatSupplierTable extends Migration
     public function up()
     {
         Schema::create('supplier', function (Blueprint $table) {
-            $table->increments('id_supplier');
-            $table->string('nama');
-            $table->text('alamat')->nullable();
-            $table->string('telepon');
+            $table->increments('id');
+            $table->string('name');
+            $table->text('address')->nullable();
+            $table->string('telephone');
             $table->timestamps();
         });
     }

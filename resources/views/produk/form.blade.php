@@ -11,9 +11,16 @@
                     @csrf
                     @method('post')
                     <div class="form-group row">
-                        <label for="nama_produk" class="col-lg-2 col-lg-offset-1 control-label">Nama</label>
+                        <label for="name" class="col-lg-2 col-lg-offset-1 control-label">Nama</label>
                         <div class="col-lg-6">
-                            <input type="text" name="nama_produk" id="nama_produk" class="form-control" required autofocus>
+                            <input type="text" name="name" id="name" class="form-control" required autofocus>
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="sku" class="col-lg-2 col-lg-offset-1 control-label">Sku</label>
+                        <div class="col-lg-6">
+                            <input type="text" name="sku" id="sku" class="form-control" required autofocus>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
@@ -30,7 +37,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="satuan" class="col-lg-2 col-lg-offset-1 control-label">Kategori</label>
+                        <label for="satuan" class="col-lg-2 col-lg-offset-1 control-label">Satuan</label>
                         <div class="col-lg-6">
                             <select name="satuan" id="satuan" class="form-control" required>
                                 <option value="">Pilih Satuan</option>
@@ -82,7 +89,7 @@
                     </div>
                 </form>
 
-                <li class="active">Kartu Stok BUlan Ini</li>
+                <li class="active">Kartu Stok Bulan Ini</li>
                 <table class="table table-bordered" id="table-stock-card">
                     <thead>
                         <tr>

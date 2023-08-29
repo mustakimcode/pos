@@ -57,8 +57,8 @@
 <body onload="window.print()">
     <button class="btn-print" style="position: absolute; right: 1rem; top: rem;" onclick="window.print()">Print</button>
     <div class="text-center">
-        <h3 style="margin-bottom: 5px;">{{ strtoupper($setting->nama_perusahaan) }}</h3>
-        <p>{{ strtoupper($setting->alamat) }}</p>
+        <h3 style="margin-bottom: 5px;">{{ strtoupper($setting->name_perusahaan) }}</h3>
+        <p>{{ strtoupper($setting->address) }}</p>
     </div>
     <br>
     <div>
@@ -73,7 +73,7 @@
     <table width="100%" style="border: 0;">
         @foreach ($detail as $item)
             <tr>
-                <td colspan="3">{{ $item->produk->nama_produk }}</td>
+                <td colspan="3">{{ $item->produk->name }}</td>
             </tr>
             <tr>
                 <td>{{ $item->jumlah }} x {{ format_uang($item->harga_jual) }}</td>

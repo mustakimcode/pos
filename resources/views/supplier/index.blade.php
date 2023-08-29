@@ -49,9 +49,9 @@
             },
             columns: [
                 {data: 'DT_RowIndex', searchable: false, sortable: false},
-                {data: 'nama'},
-                {data: 'telepon'},
-                {data: 'alamat'},
+                {data: 'name'},
+                {data: 'telephone'},
+                {data: 'address'},
                 {data: 'aksi', searchable: false, sortable: false},
             ]
         });
@@ -78,7 +78,7 @@
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
         $('#modal-form [name=_method]').val('post');
-        $('#modal-form [name=nama]').focus();
+        $('#modal-form [name=name]').focus();
     }
 
     function editForm(url) {
@@ -88,13 +88,13 @@
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
         $('#modal-form [name=_method]').val('put');
-        $('#modal-form [name=nama]').focus();
+        $('#modal-form [name=name]').focus();
 
         $.get(url)
             .done((response) => {
-                $('#modal-form [name=nama]').val(response.nama);
-                $('#modal-form [name=telepon]').val(response.telepon);
-                $('#modal-form [name=alamat]').val(response.alamat);
+                $('#modal-form [name=name]').val(response.name);
+                $('#modal-form [name=telephone]').val(response.telephone);
+                $('#modal-form [name=address]').val(response.address);
             })
             .fail((errors) => {
                 alert('Tidak dapat menampilkan data');

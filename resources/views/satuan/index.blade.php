@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('title')
-    Daftar Kategori
+    Daftar Satuan
 @endsection
 
 @section('breadcrumb')
     @parent
-    <li class="active">Daftar Kategori</li>
+    <li class="active">Daftar Satuan</li>
 @endsection
 
 @section('content')
@@ -14,13 +14,13 @@
     <div class="col-lg-12">
         <div class="box">
             <div class="box-header with-border">
-                <button onclick="addForm('{{ route('kategori.store') }}')" class="btn btn-success btn-xs btn-flat"><i class="fa fa-plus-circle"></i> Tambah</button>
+                <button onclick="addForm('{{ route('satuan.store') }}')" class="btn btn-success btn-xs btn-flat"><i class="fa fa-plus-circle"></i> Tambah</button>
             </div>
             <div class="box-body table-responsive">
                 <table class="table table-stiped table-bordered">
                     <thead>
                         <th width="5%">No</th>
-                        <th>Kategori</th>
+                        <th>Satuan</th>
                         <th width="15%"><i class="fa fa-cog"></i></th>
                     </thead>
                 </table>
@@ -29,7 +29,7 @@
     </div>
 </div>
 
-@includeIf('kategori.form')
+@includeIf('satuan.form')
 @endsection
 
 @push('scripts')
@@ -43,7 +43,7 @@
             serverSide: true,
             autoWidth: false,
             ajax: {
-                url: '{{ route('kategori.data') }}',
+                url: '{{ route('satuan.data') }}',
             },
             columns: [
                 {data: 'DT_RowIndex', searchable: false, sortable: false},
@@ -69,7 +69,7 @@
 
     function addForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Tambah Kategori');
+        $('#modal-form .modal-title').text('Tambah Satuan');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
@@ -79,7 +79,7 @@
 
     function editForm(url) {
         $('#modal-form').modal('show');
-        $('#modal-form .modal-title').text('Edit Kategori');
+        $('#modal-form .modal-title').text('Edit Satuan');
 
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);

@@ -12,23 +12,9 @@
                 </div>
                 <div class="modal-body">
                     <div class="form-group row">
-                        <label for="name" class="col-lg-2 col-lg-offset-1 control-label">Nama</label>
+                        <label for="name" class="col-lg-2 col-lg-offset-1 control-label">Satuan</label>
                         <div class="col-lg-6">
                             <input type="text" name="name" id="name" class="form-control" required autofocus>
-                            <span class="help-block with-errors"></span>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="telephone" class="col-lg-2 col-lg-offset-1 control-label">Telepon</label>
-                        <div class="col-lg-6">
-                            <input type="text" name="telephone" id="telephone" class="form-control" required>
-                            <span class="help-block with-errors"></span>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="address" class="col-lg-2 col-lg-offset-1 control-label">Alamat</label>
-                        <div class="col-lg-6">
-                            <textarea name="address" id="address" rows="3" class="form-control"></textarea>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>

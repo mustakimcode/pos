@@ -97,7 +97,7 @@ class UserController extends Controller
         $user = User::find($id);
         $user->name = $request->name;
         $user->email = $request->email;
-        if ($request->has('password') && $request->password != "") 
+        if ($request->has('password') && $request->password != "")
             $user->password = bcrypt($request->password);
         $user->update();
 
@@ -126,7 +126,7 @@ class UserController extends Controller
     public function updateProfil(Request $request)
     {
         $user = auth()->user();
-        
+
         $user->name = $request->name;
         if ($request->has('password') && $request->password != "") {
             if (Hash::check($request->old_password, $user->password)) {
@@ -142,10 +142,10 @@ class UserController extends Controller
 
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
-            $nama = 'logo-' . date('YmdHis') . '.' . $file->getClientOriginalExtension();
-            $file->move(public_path('/img'), $nama);
+            $name = 'logo-' . date('YmdHis') . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('/img'), $name);
 
-            $user->foto = "/img/$nama";
+            $user->foto = "/img/$name";
         }
 
         $user->update();

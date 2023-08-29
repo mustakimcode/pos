@@ -23,10 +23,15 @@
             </li>
 
             @if (auth()->user()->level == 1)
-            <li class="header">MASTER</li>
+            <li class="header">MASTER DATA</li>
             <li>
                 <a href="{{ route('kategori.index') }}">
                     <i class="fa fa-cube"></i> <span>Kategori</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('satuan.index') }}">
+                    <i class="fa fa-cube"></i> <span>Satuan</span>
                 </a>
             </li>
             <li>

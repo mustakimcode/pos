@@ -46,9 +46,9 @@ class DashboardController extends Controller
             ->select(
                 'penjualan_detail.*',
                 DB::raw('TIME(penjualan_detail.created_at) as time'),
-                'produk.nama_produk'
+                'produk.name'
             )
-            ->join('penjualan_detail', 'penjualan_detail.id_produk', '=', 'produk.id_produk')
+            ->join('penjualan_detail', 'penjualan_detail.id_produk', '=', 'produk.id')
             ->whereRaw('Date(penjualan_detail.created_at) = CURDATE()')
             ->orderBy('penjualan_detail.id_penJualan','desc')
             ->get();

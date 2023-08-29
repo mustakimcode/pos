@@ -18,17 +18,17 @@ class ProdukController extends Controller
      */
     public function index()
     {
-        $kategori = Kategori::all()->pluck('nama_kategori', 'id_kategori');
-        $satuan = Satuan::all()->pluck('nama', 'id');
+        $kategori = Kategori::all()->pluck('name', 'id');
+        $satuan = Satuan::all()->pluck('name', 'id');
 
-        return view('produk.index', compact('kategori','satuan'));
+        return view('produk.index', compact('kategori', 'satuan'));
     }
 
     public function data()
     {
-        $produk = Produk::leftJoin('kategori', 'kategori.id_kategori', 'produk.id_kategori')
-            ->select('produk.*', 'nama_kategori')
-            // ->orderBy('kode_produk', 'asc')
+        $produk = Produk::join('kategori', 'kategori.id', 'produk.id_kategori')
+            ->select('produk.*', 'kategori.name as category_name')
+            // ->orderBy('sku', 'asc')
             ->get();
 
         return datatables()
@@ -36,11 +36,11 @@ class ProdukController extends Controller
             ->addIndexColumn()
             ->addColumn('select_all', function ($produk) {
                 return '
-                    <input type="checkbox" name="id_produk[]" value="' . $produk->id_produk . '">
+                    <input type="checkbox" name="id[]" value="' . $produk->id . '">
                 ';
             })
-            ->addColumn('kode_produk', function ($produk) {
-                return '<span class="label label-success">' . $produk->kode_produk . '</span>';
+            ->addColumn('sku', function ($produk) {
+                return '<span class="label label-success">' . $produk->sku . '</span>';
             })
             ->addColumn('harga_beli', function ($produk) {
                 return format_uang($produk->harga_beli);
@@ -54,12 +54,12 @@ class ProdukController extends Controller
             ->addColumn('aksi', function ($produk) {
                 return '
                 <div class="btn-group">
-                    <button type="button" onclick="editForm(`' . route('produk.update', $produk->id_produk) . '`)" class="btn btn-xs btn-info btn-flat"><i class="fa fa-pencil"></i></button>
-                    <button type="button" onclick="deleteData(`' . route('produk.destroy', $produk->id_produk) . '`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
+                    <button type="button" onclick="editForm(`' . route('produk.update', $produk->id) . '`)" class="btn btn-xs btn-info btn-flat"><i class="fa fa-pencil"></i></button>
+                    <button type="button" onclick="deleteData(`' . route('produk.destroy', $produk->id) . '`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
                 </div>
                 ';
             })
-            ->rawColumns(['aksi', 'kode_produk', 'select_all'])
+            ->rawColumns(['aksi', 'sku', 'select_all'])
             ->make(true);
     }
 
@@ -81,11 +81,7 @@ class ProdukController extends Controller
      */
     public function store(Request $request)
     {
-        $produk = Produk::latest()->first() ?? new Produk();
-        $request['kode_produk'] = 'P' . tambah_nol_didepan((int)$produk->id_produk + 1, 6);
-
-        $produk = Produk::create($request->all());
-
+        Produk::create($request->all());
         return response()->json('Data berhasil disimpan', 200);
     }
 
@@ -103,8 +99,8 @@ class ProdukController extends Controller
                 DB::raw('DATE(penjualan_detail.created_at) as tanggal'),
                 DB::raw('sum(penjualan_detail.jumlah) as keluar')
             )
-            ->join('penjualan_detail', 'penjualan_detail.id_produk', '=', 'produk.id_produk')
-            ->where('produk.id_produk', $produk->id_produk)
+            ->join('penjualan_detail', 'penjualan_detail.id_produk', '=', 'produk.id')
+            ->where('produk.id', $produk->id)
             ->groupBy(DB::raw('DATE(penjualan_detail.created_at)'))
             ->get();
         $historyStockPembelian = DB::table('produk')
@@ -112,8 +108,8 @@ class ProdukController extends Controller
                 DB::raw('DATE(pembelian_detail.created_at) as tanggal'),
                 DB::raw('sum(pembelian_detail.jumlah) as masuk')
             )
-            ->join('pembelian_detail', 'pembelian_detail.id_produk', '=', 'produk.id_produk')
-            ->where('produk.id_produk', $produk->id_produk)
+            ->join('pembelian_detail', 'pembelian_detail.id_produk', '=', 'produk.id')
+            ->where('produk.id', $produk->id)
             ->groupBy(DB::raw('DATE(pembelian_detail.created_at)'))
             ->get();
 
@@ -179,7 +175,7 @@ class ProdukController extends Controller
 
     public function deleteSelected(Request $request)
     {
-        foreach ($request->id_produk as $id) {
+        foreach ($request->id as $id) {
             $produk = Produk::find($id);
             $produk->delete();
         }
@@ -190,7 +186,7 @@ class ProdukController extends Controller
     public function cetakBarcode(Request $request)
     {
         $dataproduk = array();
-        foreach ($request->id_produk as $id) {
+        foreach ($request->id as $id) {
             $produk = Produk::find($id);
             $dataproduk[] = $produk;
         }

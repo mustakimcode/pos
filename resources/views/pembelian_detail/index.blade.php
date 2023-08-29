@@ -44,29 +44,29 @@
                 <table>
                     <tr>
                         <td>Supplier</td>
-                        <td>: {{ $supplier->nama }}</td>
+                        <td>: {{ $supplier->name }}</td>
                     </tr>
                     <tr>
                         <td>Telepon</td>
-                        <td>: {{ $supplier->telepon }}</td>
+                        <td>: {{ $supplier->telephone }}</td>
                     </tr>
                     <tr>
                         <td>Alamat</td>
-                        <td>: {{ $supplier->alamat }}</td>
+                        <td>: {{ $supplier->address }}</td>
                     </tr>
                 </table>
             </div>
             <div class="box-body">
-                    
+
                 <form class="form-produk">
                     @csrf
                     <div class="form-group row">
-                        <label for="kode_produk" class="col-lg-2">Kode Produk</label>
+                        <label for="sku" class="col-lg-2">Kode Produk</label>
                         <div class="col-lg-5">
                             <div class="input-group">
                                 <input type="hidden" name="id_pembelian" id="id_pembelian" value="{{ $id_pembelian }}">
-                                <input type="hidden" name="id_produk" id="id_produk">
-                                <input type="text" class="form-control" name="kode_produk" id="kode_produk">
+                                <input type="hidden" name="id" id="id">
+                                <input type="text" class="form-control" name="sku" id="sku">
                                 <span class="input-group-btn">
                                     <button onclick="tampilProduk()" class="btn btn-info btn-flat" type="button"><i class="fa fa-arrow-right"></i></button>
                                 </span>
@@ -150,8 +150,8 @@
             },
             columns: [
                 {data: 'DT_RowIndex', searchable: false, sortable: false},
-                {data: 'kode_produk'},
-                {data: 'nama_produk'},
+                {data: 'sku'},
+                {data: 'name'},
                 {data: 'harga_beli'},
                 {data: 'jumlah'},
                 {data: 'subtotal'},
@@ -219,8 +219,8 @@
     }
 
     function pilihProduk(id, kode) {
-        $('#id_produk').val(id);
-        $('#kode_produk').val(kode);
+        $('#id').val(id);
+        $('#sku').val(kode);
         hideProduk();
         tambahProduk();
     }
@@ -228,7 +228,7 @@
     function tambahProduk() {
         $.post('{{ route('pembelian_detail.store') }}', $('.form-produk').serialize())
             .done(response => {
-                $('#kode_produk').focus();
+                $('#sku').focus();
                 table.ajax.reload(() => loadForm($('#diskon').val()));
             })
             .fail(errors => {

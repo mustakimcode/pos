@@ -19,9 +19,9 @@
                         @foreach ($member as $key => $item)
                             <tr>
                                 <td width="5%">{{ $key+1 }}</td>
-                                <td>{{ $item->nama }}</td>
-                                <td>{{ $item->telepon }}</td>
-                                <td>{{ $item->alamat }}</td>
+                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->telephone }}</td>
+                                <td>{{ $item->address }}</td>
                                 <td>
                                     <a href="#" class="btn btn-primary btn-xs btn-flat"
                                         onclick="pilihMember('{{ $item->id_member }}', '{{ $item->kode_member }}')">

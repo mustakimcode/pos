@@ -15,7 +15,7 @@ class BuatSatuanProdukTable extends Migration
     {
         Schema::create('satuan', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama')->unique();
+            $table->string('name')->unique();
             $table->timestamps();
         });
     }

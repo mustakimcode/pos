@@ -15,9 +15,9 @@ class BuatSettingTable extends Migration
     {
         Schema::create('setting', function (Blueprint $table) {
             $table->increments('id_setting');
-            $table->string('nama_perusahaan');
-            $table->text('alamat')->nullable();
-            $table->string('telepon');
+            $table->string('name_perusahaan');
+            $table->text('address')->nullable();
+            $table->string('telephone');
             $table->tinyInteger('tipe_nota');
             $table->string('path_logo');
             $table->string('path_kartu_member');

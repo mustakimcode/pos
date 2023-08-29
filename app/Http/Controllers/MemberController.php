@@ -69,9 +69,9 @@ class MemberController extends Controller
 
         $member = new Member();
         $member->kode_member = tambah_nol_didepan($kode_member, 5);
-        $member->nama = $request->nama;
-        $member->telepon = $request->telepon;
-        $member->alamat = $request->alamat;
+        $member->name = $request->name;
+        $member->telephone = $request->telephone;
+        $member->address = $request->address;
         $member->save();
 
         return response()->json('Data berhasil disimpan', 200);

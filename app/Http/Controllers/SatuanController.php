@@ -3,27 +3,32 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Supplier;
+use App\Models\Satuan;
 
-class SupplierController extends Controller
+class SatuanController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        return view('supplier.index');
+        return view('satuan.index');
     }
 
     public function data()
     {
-        $supplier = Supplier::orderBy('id', 'desc')->get();
+        $satuan = Satuan::orderBy('id', 'desc')->get();
 
         return datatables()
-            ->of($supplier)
+            ->of($satuan)
             ->addIndexColumn()
-            ->addColumn('aksi', function ($supplier) {
+            ->addColumn('aksi', function ($satuan) {
                 return '
                 <div class="btn-group">
-                    <button type="button" onclick="editForm(`'. route('supplier.update', $supplier->id) .'`)" class="btn btn-xs btn-info btn-flat"><i class="fa fa-pencil"></i></button>
-                    <button type="button" onclick="deleteData(`'. route('supplier.destroy', $supplier->id) .'`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
+                    <button onclick="editForm(`'. route('satuan.update', $satuan->id) .'`)" class="btn btn-xs btn-info btn-flat"><i class="fa fa-pencil"></i></button>
+                    <button onclick="deleteData(`'. route('satuan.destroy', $satuan->id) .'`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
                 </div>
                 ';
             })
@@ -49,7 +54,9 @@ class SupplierController extends Controller
      */
     public function store(Request $request)
     {
-        $supplier = Supplier::create($request->all());
+        $satuan = new Satuan();
+        $satuan->name = $request->name;
+        $satuan->save();
 
         return response()->json('Data berhasil disimpan', 200);
     }
@@ -62,9 +69,9 @@ class SupplierController extends Controller
      */
     public function show($id)
     {
-        $supplier = Supplier::find($id);
+        $satuan = Satuan::find($id);
 
-        return response()->json($supplier);
+        return response()->json($satuan);
     }
 
     /**
@@ -87,7 +94,9 @@ class SupplierController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $supplier = Supplier::find($id)->update($request->all());
+        $satuan = Satuan::find($id);
+        $satuan->name = $request->name;
+        $satuan->update();
 
         return response()->json('Data berhasil disimpan', 200);
     }
@@ -100,7 +109,8 @@ class SupplierController extends Controller
      */
     public function destroy($id)
     {
-        $supplier = Supplier::find($id)->delete();
+        $satuan = Satuan::find($id);
+        $satuan->delete();
 
         return response(null, 204);
     }

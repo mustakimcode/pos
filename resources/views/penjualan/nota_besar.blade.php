@@ -33,7 +33,7 @@
             <td rowspan="4" width="60%">
                 <img src="{{ public_path($setting->path_logo) }}" alt="{{ $setting->path_logo }}" width="120">
                 <br>
-                {{ $setting->alamat }}
+                {{ $setting->address }}
                 <br>
                 <br>
             </td>
@@ -62,8 +62,8 @@
             @foreach ($detail as $key => $item)
                 <tr>
                     <td class="text-center">{{ $key+1 }}</td>
-                    <td>{{ $item->produk->nama_produk }}</td>
-                    <td>{{ $item->produk->kode_produk }}</td>
+                    <td>{{ $item->produk->name }}</td>
+                    <td>{{ $item->produk->sku }}</td>
                     <td class="text-right">{{ format_uang($item->harga_jual) }}</td>
                     <td class="text-right">{{ format_uang($item->jumlah) }}</td>
                     <td class="text-right">{{ $item->diskon }}</td>

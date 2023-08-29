@@ -17,7 +17,7 @@ Daftar Produk
                 <div class="btn-group">
                     <button onclick="addForm('{{ route('produk.store') }}')" class="btn btn-success btn-xs btn-flat"><i class="fa fa-plus-circle"></i> Tambah</button>
                     <button onclick="deleteSelected('{{ route('produk.delete_selected') }}')" class="btn btn-danger btn-xs btn-flat"><i class="fa fa-trash"></i> Hapus</button>
-                    <button onclick="cetakBarcode('{{ route('produk.cetak_barcode') }}')" class="btn btn-info btn-xs btn-flat"><i class="fa fa-barcode"></i> Cetak Barcode</button>
+                    <!-- <button onclick="cetakBarcode('{{ route('produk.cetak_barcode') }}')" class="btn btn-info btn-xs btn-flat"><i class="fa fa-barcode"></i> Cetak Barcode</button> -->
                 </div>
             </div>
             <div class="box-body table-responsive">
@@ -29,7 +29,7 @@ Daftar Produk
                                 <input type="checkbox" name="select_all" id="select_all">
                             </th>
                             <th width="5%">No</th>
-                            <th>Kode</th>
+                            <th>Sku</th>
                             <th>Nama</th>
                             <th>Kategori</th>
                             <th>Satuan</th>
@@ -74,13 +74,13 @@ Daftar Produk
                     sortable: false
                 },
                 {
-                    data: 'kode_produk'
+                    data: 'sku'
                 },
                 {
-                    data: 'nama_produk'
+                    data: 'name'
                 },
                 {
-                    data: 'nama_kategori'
+                    data: 'category_name'
                 },
                 {
                     data: 'satuan'
@@ -134,7 +134,7 @@ Daftar Produk
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
         $('#modal-form [name=_method]').val('post');
-        $('#modal-form [name=nama_produk]').focus();
+        $('#modal-form [name=name]').focus();
     }
 
     function editForm(url) {
@@ -144,13 +144,16 @@ Daftar Produk
         $('#modal-form form')[0].reset();
         $('#modal-form form').attr('action', url);
         $('#modal-form [name=_method]').val('put');
-        $('#modal-form [name=nama_produk]').focus();
+        $('#modal-form [name=name]').focus();
 
         $.get(url)
             .done((response) => {
-                $('#modal-form [name=nama_produk]').val(response.nama_produk);
-                $('#modal-form [name=id_kategori]').val(response.id_kategori);
+                $('#modal-form [name=name]').val(response.name);
+                $('#modal-form [name=id]').val(response.id);
+                $('#modal-form [name=sku]').val(response.sku);
                 $('#modal-form [name=merk]').val(response.merk);
+                $('#modal-form [name=id_kategori]').val(response.id_kategori);
+                $('#modal-form [name=satuan]').val(response.satuan);
                 $('#modal-form [name=harga_beli]').val(response.harga_beli);
                 $('#modal-form [name=harga_jual]').val(response.harga_jual);
                 $('#modal-form [name=diskon]').val(response.diskon);

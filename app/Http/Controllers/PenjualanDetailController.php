@@ -13,8 +13,8 @@ class PenjualanDetailController extends Controller
 {
     public function index()
     {
-        $produk = Produk::orderBy('nama_produk')->get();
-        $member = Member::orderBy('nama')->get();
+        $produk = Produk::orderBy('name')->get();
+        $member = Member::orderBy('name')->get();
         $diskon = Setting::first()->diskon ?? 0;
 
         // Cek apakah ada transaksi yang sedang berjalan
@@ -44,8 +44,8 @@ class PenjualanDetailController extends Controller
 
         foreach ($detail as $item) {
             $row = array();
-            $row['kode_produk'] = '<span class="label label-success">'. $item->produk['kode_produk'] .'</span';
-            $row['nama_produk'] = $item->produk['nama_produk'];
+            $row['sku'] = '<span class="label label-success">'. $item->produk['sku'] .'</span';
+            $row['name'] = $item->produk['name'];
             $row['harga_jual']  = 'Rp. '. format_uang($item->harga_jual);
             $row['jumlah']      = '<input type="number" class="form-control input-sm quantity" data-id="'. $item->id_penjualan_detail .'" value="'. $item->jumlah .'">';
             $row['diskon']      = $item->diskon . '%';
@@ -59,10 +59,10 @@ class PenjualanDetailController extends Controller
             $total_item += $item->jumlah;
         }
         $data[] = [
-            'kode_produk' => '
+            'sku' => '
                 <div class="total hide">'. $total .'</div>
                 <div class="total_item hide">'. $total_item .'</div>',
-            'nama_produk' => '',
+            'name' => '',
             'harga_jual'  => '',
             'jumlah'      => '',
             'diskon'      => '',
@@ -73,20 +73,20 @@ class PenjualanDetailController extends Controller
         return datatables()
             ->of($data)
             ->addIndexColumn()
-            ->rawColumns(['aksi', 'kode_produk', 'jumlah'])
+            ->rawColumns(['aksi', 'sku', 'jumlah'])
             ->make(true);
     }
 
     public function store(Request $request)
     {
-        $produk = Produk::where('id_produk', $request->id_produk)->first();
+        $produk = Produk::where('id', $request->id)->first();
         if (! $produk) {
             return response()->json('Data gagal disimpan', 400);
         }
 
         $detail = new PenjualanDetail();
         $detail->id_penjualan = $request->id_penjualan;
-        $detail->id_produk = $produk->id_produk;
+        $detail->id_produk = $produk->id;
         $detail->harga_jual = $produk->harga_jual;
         $detail->jumlah = 1;
         $detail->diskon = $produk->diskon;

@@ -43,7 +43,6 @@ Dashboard
     </div>
     <!-- ./col -->
     <div class="col-lg-3 col-xs-6">
-        <!-- small box -->
         <div class="small-box bg-yellow">
             <div class="inner">
                 <h3>{{ $member }}</h3>
@@ -121,7 +120,7 @@ Dashboard
                                         <tr>
                                             <td>{{$penjualan->id_penjualan}}</td>
                                             <td>{{date("H:i", strtotime($penjualan->time))}}</td>
-                                            <td>{{$penjualan->nama_produk}}</td>
+                                            <td>{{$penjualan->name}}</td>
                                             <td>{{$penjualan->jumlah}}</td>
                                             <td>{{$penjualan->harga_jual}}</td>
                                             <td>{{$penjualan->subtotal}}</td>
