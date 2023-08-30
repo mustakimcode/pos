@@ -56,6 +56,13 @@
                         </div>
                     </div>
                     <div class="form-group row">
+                        <label for="expired_date" class="col-lg-2 col-lg-offset-1 control-label">Expired Date</label>
+                        <div class="col-lg-6">
+                            <input type="date" name="expired_date" id="expired_date" class="form-control">
+                            <span class="help-block with-errors"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
                         <label for="harga_beli" class="col-lg-2 col-lg-offset-1 control-label">Harga Beli</label>
                         <div class="col-lg-6">
                             <input type="number" name="harga_beli" id="harga_beli" class="form-control" required>

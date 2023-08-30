@@ -153,6 +153,7 @@ Daftar Produk
                 $('#modal-form [name=sku]').val(response.sku);
                 $('#modal-form [name=merk]').val(response.merk);
                 $('#modal-form [name=id_kategori]').val(response.id_kategori);
+                $('#modal-form [name=expired_date]').val(response.expired_date);
                 $('#modal-form [name=satuan]').val(response.satuan);
                 $('#modal-form [name=harga_beli]').val(response.harga_beli);
                 $('#modal-form [name=harga_jual]').val(response.harga_jual);
