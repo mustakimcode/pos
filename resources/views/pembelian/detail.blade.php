@@ -12,6 +12,8 @@
                         <th width="5%">No</th>
                         <th>Kode</th>
                         <th>Nama</th>
+                        <th>Batch</th>
+                        <th>Expired Date</th>
                         <th>Harga</th>
                         <th>Jumlah</th>
                         <th>Subtotal</th>

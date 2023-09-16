@@ -41,8 +41,7 @@ class DashboardController extends Controller
         }
 
         $tanggal_awal = date('Y-m-01');
-
-         $historyPenjualan = DB::table('produk')
+        $historyPenjualan = DB::table('produk')
             ->select(
                 'penjualan_detail.*',
                 DB::raw('TIME(penjualan_detail.created_at) as time'),
@@ -50,11 +49,23 @@ class DashboardController extends Controller
             )
             ->join('penjualan_detail', 'penjualan_detail.id_produk', '=', 'produk.id')
             ->whereRaw('Date(penjualan_detail.created_at) = CURDATE()')
-            ->orderBy('penjualan_detail.id_penJualan','desc')
+            ->orderBy('penjualan_detail.id_penJualan', 'desc')
             ->get();
 
+        $tanggalAwal = date('Y-m-d', mktime(0, 0, 0, date('m'), 1, date('Y')));
+        $tanggalAkhir = date('Y-m-d');
+
+        $mostBuyObat =  DB::table('produk')
+            ->select('produk.id', 'produk.name', DB::raw('sum(penjualan_detail.jumlah) as qty_penjualan'), DB::raw('sum(penjualan_detail.subtotal) as total_penjualan'))
+            ->join('penjualan_detail', 'penjualan_detail.id_produk', '=', 'produk.id')
+            ->where('penjualan_detail.created_at', '>=', $tanggalAwal)
+            ->where('penjualan_detail.created_at', '<=', $tanggalAkhir)
+            ->orderBy('qty_penjualan', 'DESC')
+            ->groupBy('produk.id')
+            ->get(10);
+
         if (auth()->user()->level == 1) {
-            return view('admin.dashboard', compact('kategori', 'produk', 'supplier', 'member', 'tanggal_awal', 'tanggal_akhir', 'data_tanggal', 'data_pendapatan', 'historyPenjualan'));
+            return view('admin.dashboard', compact('kategori', 'produk', 'supplier', 'member', 'tanggal_awal', 'tanggal_akhir', 'data_tanggal', 'data_pendapatan', 'historyPenjualan','mostBuyObat'));
         } else {
             return view('kasir.dashboard');
         }

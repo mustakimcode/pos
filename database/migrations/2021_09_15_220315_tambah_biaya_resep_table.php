@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class BuatKategoriTable extends Migration
+class TambahBiayaResepTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class BuatKategoriTable extends Migration
      */
     public function up()
     {
-        Schema::create('kategori', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->unique();
-            $table->float('price')->nullable();
-            $table->softDeletes();
-            $table->timestamps();
+        Schema::table('penjualan', function (Blueprint $table) {
+            $table->integer('biaya_resep')
+                  ->default(0)
+                  ->after('total_harga');
         });
     }
 
@@ -29,6 +27,8 @@ class BuatKategoriTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kategori');
+        Schema::table('penjualan', function (Blueprint $table) {
+            $table->dropColumn('biaya_resep');
+        });
     }
 }

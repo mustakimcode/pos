@@ -21,6 +21,7 @@ class BuatSettingTable extends Migration
             $table->tinyInteger('tipe_nota');
             $table->string('path_logo');
             $table->string('path_kartu_member');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

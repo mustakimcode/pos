@@ -75,6 +75,8 @@
                 {data: 'DT_RowIndex', searchable: false, sortable: false},
                 {data: 'sku'},
                 {data: 'name'},
+                {data: 'batch'},
+                {data: 'expired_date'},
                 {data: 'harga_beli'},
                 {data: 'jumlah'},
                 {data: 'subtotal'},

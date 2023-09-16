@@ -25,7 +25,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 15,
                 "harga_beli" => "6500",
                 "harga_jual" => "8000",
-                 "expired_date" => "01/07/2027",
+                "expired_date" => "01/07/2027",
                 "category" => "PREKURSOR"
             ],
             [
@@ -45,7 +45,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 7,
                 "harga_beli" => "9000",
                 "harga_jual" => "11000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "PREKURSOR"
             ],
             [
@@ -65,7 +65,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "8640",
                 "harga_jual" => "7000",
-                 "expired_date" => "01/04/2027",
+                "expired_date" => "01/04/2027",
                 "category" => "PREKURSOR"
             ],
             [
@@ -85,7 +85,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 9,
                 "harga_beli" => "9000",
                 "harga_jual" => "11000",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "PREKURSOR"
             ],
             [
@@ -95,7 +95,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "2925",
                 "harga_jual" => "3500",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "PREKURSOR"
             ],
             [
@@ -115,7 +115,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "3100",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "PREKURSOR"
             ],
             [
@@ -125,7 +125,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "14500",
                 "harga_jual" => "17000",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "PREKURSOR"
             ],
             [
@@ -145,7 +145,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "2450",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/07/2026",
+                "expired_date" => "01/07/2026",
                 "category" => "PREKURSOR"
             ],
             [
@@ -155,7 +155,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "2080",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "PREKURSOR"
             ],
             [
@@ -165,7 +165,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "3100",
                 "harga_jual" => "3500",
-                 "expired_date" => "01/05/2027",
+                "expired_date" => "01/05/2027",
                 "category" => "PREKURSOR"
             ],
             [
@@ -175,7 +175,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "3100",
                 "harga_jual" => "3600",
-                 "expired_date" => "01/05/2027",
+                "expired_date" => "01/05/2027",
                 "category" => "PREKURSOR"
             ],
             [
@@ -185,7 +185,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "2700",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "PREKURSOR"
             ],
             [
@@ -195,7 +195,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "2700",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "PREKURSOR"
             ],
             [
@@ -205,7 +205,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "2700",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "PREKURSOR"
             ],
             [
@@ -225,7 +225,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "2450",
                 "harga_jual" => "3100",
-                 "expired_date" => "01/09/2023",
+                "expired_date" => "01/09/2023",
                 "category" => "PREKURSOR"
             ],
             [
@@ -235,7 +235,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "3500",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "PREKURSOR"
             ],
             [
@@ -255,7 +255,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "2700",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "PREKURSOR"
             ],
             [
@@ -275,7 +275,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "2700",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/05/2024",
+                "expired_date" => "01/05/2024",
                 "category" => "PREKURSOR"
             ],
             [
@@ -305,7 +305,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "10500",
                 "harga_jual" => "12500",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -315,7 +315,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "12700",
                 "harga_jual" => "14600",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -325,7 +325,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "7150",
                 "harga_jual" => "8000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -335,7 +335,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "4500",
                 "harga_jual" => "5500",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "OTC"
             ],
             [
@@ -355,7 +355,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "2450",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/03/2028",
+                "expired_date" => "01/03/2028",
                 "category" => "OTC"
             ],
             [
@@ -365,7 +365,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "2218",
                 "harga_jual" => "2500",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -395,7 +395,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "4400",
                 "harga_jual" => "5000",
-                 "expired_date" => "01/03/2028",
+                "expired_date" => "01/03/2028",
                 "category" => "OTC"
             ],
             [
@@ -415,7 +415,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "5580",
                 "harga_jual" => "6200",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -435,7 +435,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "3500",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -445,7 +445,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "1800",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -455,7 +455,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 46,
                 "harga_beli" => "4950",
                 "harga_jual" => "6000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -465,7 +465,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "1800",
                 "harga_jual" => "2000",
-                 "expired_date" => "01/02/2028",
+                "expired_date" => "01/02/2028",
                 "category" => "OTC"
             ],
             [
@@ -485,7 +485,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "4000",
                 "harga_jual" => "4500",
-                 "expired_date" => "01/07/2024",
+                "expired_date" => "01/07/2024",
                 "category" => "OTC"
             ],
             [
@@ -495,7 +495,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "2450",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/09/2026",
+                "expired_date" => "01/09/2026",
                 "category" => "OTC"
             ],
             [
@@ -505,7 +505,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 120,
                 "harga_beli" => "658.3",
                 "harga_jual" => "1000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -515,7 +515,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "2450",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/07/2026",
+                "expired_date" => "01/07/2026",
                 "category" => "OTC"
             ],
             [
@@ -525,7 +525,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "2200",
                 "harga_jual" => "5000",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "OTC"
             ],
             [
@@ -535,7 +535,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "2850",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/07/2024",
+                "expired_date" => "01/07/2024",
                 "category" => "OTC"
             ],
             [
@@ -555,7 +555,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "2700",
                 "harga_jual" => "3000",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "OTC"
             ],
             [
@@ -575,7 +575,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 15,
                 "harga_beli" => "2250",
                 "harga_jual" => "2500",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "OTC"
             ],
             [
@@ -585,7 +585,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "1400",
                 "harga_jual" => "2000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -595,7 +595,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 11,
                 "harga_beli" => "1350",
                 "harga_jual" => "2000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "OTC"
             ],
             [
@@ -605,7 +605,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "1350",
                 "harga_jual" => "2000",
-                 "expired_date" => "01/09/2026",
+                "expired_date" => "01/09/2026",
                 "category" => "OTC"
             ],
             [
@@ -615,7 +615,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "5600",
                 "harga_jual" => "6500",
-                 "expired_date" => "01/05/2024",
+                "expired_date" => "01/05/2024",
                 "category" => "OTC"
             ],
             [
@@ -625,7 +625,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "3500",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -645,7 +645,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "11000",
                 "harga_jual" => "12700",
-                 "expired_date" => "01/07/2026",
+                "expired_date" => "01/07/2026",
                 "category" => "OTC"
             ],
             [
@@ -685,7 +685,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "11250",
                 "harga_jual" => "13000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -695,7 +695,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "12832",
                 "harga_jual" => "15000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -705,7 +705,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "12832",
                 "harga_jual" => "15000",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "OTC"
             ],
             [
@@ -715,7 +715,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "12832",
                 "harga_jual" => "15000",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -735,7 +735,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "12832",
                 "harga_jual" => "15000",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "OTC"
             ],
             [
@@ -765,7 +765,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "49810",
                 "harga_jual" => "58600",
-                 "expired_date" => "01/03/2027",
+                "expired_date" => "01/03/2027",
                 "category" => "OTC"
             ],
             [
@@ -775,7 +775,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "15540",
                 "harga_jual" => "18000",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "OTC"
             ],
             [
@@ -795,7 +795,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "28860",
                 "harga_jual" => "33000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -815,7 +815,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 9,
                 "harga_beli" => "28860",
                 "harga_jual" => "34000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -825,7 +825,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "16900",
                 "harga_jual" => "20000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -855,7 +855,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "19100",
                 "harga_jual" => "22200",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "OTC"
             ],
             [
@@ -895,7 +895,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "25560",
                 "harga_jual" => "28400",
-                 "expired_date" => "01/09/2025",
+                "expired_date" => "01/09/2025",
                 "category" => "OTC"
             ],
             [
@@ -905,7 +905,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 9,
                 "harga_beli" => "12800",
                 "harga_jual" => "14500",
-                 "expired_date" => "01/05/2027",
+                "expired_date" => "01/05/2027",
                 "category" => "OTC"
             ],
             [
@@ -915,7 +915,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "22500",
                 "harga_jual" => "26000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -965,7 +965,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 24,
                 "harga_beli" => "3321.7",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/04/2027",
+                "expired_date" => "01/04/2027",
                 "category" => "OTC"
             ],
             [
@@ -985,7 +985,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 23,
                 "harga_beli" => "4566.4",
                 "harga_jual" => "5500",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -995,7 +995,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "33624",
                 "harga_jual" => "39000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1005,7 +1005,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "43068",
                 "harga_jual" => "49500",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1025,7 +1025,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 8,
                 "harga_beli" => "24208",
                 "harga_jual" => "28000",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1055,7 +1055,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "24350",
                 "harga_jual" => "28000",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1065,7 +1065,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "42500",
                 "harga_jual" => "49000",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1095,7 +1095,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "10999",
                 "harga_jual" => "13000",
-                 "expired_date" => "01/05/2024",
+                "expired_date" => "01/05/2024",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1105,7 +1105,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "8499.74",
                 "harga_jual" => "10000",
-                 "expired_date" => "01/07/2024",
+                "expired_date" => "01/07/2024",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1115,7 +1115,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "5045.45",
                 "harga_jual" => "6000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1165,7 +1165,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "1980",
                 "harga_jual" => "2300",
-                 "expired_date" => "01/09/2023",
+                "expired_date" => "01/09/2023",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1175,7 +1175,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 27,
                 "harga_beli" => "1576.2",
                 "harga_jual" => "2000",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1185,7 +1185,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "15567.7",
                 "harga_jual" => "19000",
-                 "expired_date" => "01/07/2026",
+                "expired_date" => "01/07/2026",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1195,7 +1195,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "5661",
                 "harga_jual" => "6600",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1205,7 +1205,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 24,
                 "harga_beli" => "5550",
                 "harga_jual" => "6500",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1225,7 +1225,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 23,
                 "harga_beli" => "11510.7",
                 "harga_jual" => "13200",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1235,7 +1235,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "45343.5",
                 "harga_jual" => "52300",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1255,7 +1255,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 9,
                 "harga_beli" => "8775",
                 "harga_jual" => "10091",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1265,7 +1265,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "6250",
                 "harga_jual" => "7188",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1275,7 +1275,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "6025",
                 "harga_jual" => "6929",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1285,7 +1285,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 15,
                 "harga_beli" => "19440",
                 "harga_jual" => "23000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1295,7 +1295,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 14,
                 "harga_beli" => "26122.5",
                 "harga_jual" => "31000",
-                 "expired_date" => "01/03/2024",
+                "expired_date" => "01/03/2024",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -1305,7 +1305,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "19083",
                 "harga_jual" => "22000",
-                 "expired_date" => "01/09/2025",
+                "expired_date" => "01/09/2025",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1315,7 +1315,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "17525",
                 "harga_jual" => "20100",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1325,7 +1325,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "17280",
                 "harga_jual" => "19200",
-                 "expired_date" => "01/06/2026",
+                "expired_date" => "01/06/2026",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1335,7 +1335,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "7000",
                 "harga_jual" => "8500",
-                 "expired_date" => "01/02/2027",
+                "expired_date" => "01/02/2027",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1345,7 +1345,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "1665",
                 "harga_jual" => "2000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1375,7 +1375,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 7,
                 "harga_beli" => "14615",
                 "harga_jual" => "17000",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1385,7 +1385,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 24,
                 "harga_beli" => "2748.4",
                 "harga_jual" => "3500",
-                 "expired_date" => "01/09/2025",
+                "expired_date" => "01/09/2025",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1405,7 +1405,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "3000",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/06/2026",
+                "expired_date" => "01/06/2026",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1415,7 +1415,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "7500",
                 "harga_jual" => "8000",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1425,7 +1425,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "6983.3",
                 "harga_jual" => "8200",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1445,7 +1445,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 9,
                 "harga_beli" => "2000",
                 "harga_jual" => "2500",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1455,7 +1455,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "3000",
                 "harga_jual" => "3500",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1485,7 +1485,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "4950",
                 "harga_jual" => "6000",
-                 "expired_date" => "01/04/2027",
+                "expired_date" => "01/04/2027",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1495,7 +1495,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "4500",
                 "harga_jual" => "5500",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1505,7 +1505,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "38500",
                 "harga_jual" => "44500",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "PENCERNAAN"
             ],
             [
@@ -1575,7 +1575,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "21000",
                 "harga_jual" => "24000",
-                 "expired_date" => "01/06/2026",
+                "expired_date" => "01/06/2026",
                 "category" => "OTC"
             ],
             [
@@ -1645,7 +1645,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "7000",
                 "harga_jual" => "8000",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "OTC"
             ],
             [
@@ -1655,7 +1655,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "11700",
                 "harga_jual" => "13000",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -1665,7 +1665,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "7500",
                 "harga_jual" => "8700",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -1675,7 +1675,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "11700",
                 "harga_jual" => "13700",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -1685,7 +1685,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "8800",
                 "harga_jual" => "10200",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -1715,7 +1715,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 7,
                 "harga_beli" => "6068",
                 "harga_jual" => "7000",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "OTC"
             ],
             [
@@ -1755,7 +1755,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "26500",
                 "harga_jual" => "32000",
-                 "expired_date" => "01/09/2024",
+                "expired_date" => "01/09/2024",
                 "category" => "OTC"
             ],
             [
@@ -1765,7 +1765,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "49995.5",
                 "harga_jual" => "55000",
-                 "expired_date" => "01/03/2024",
+                "expired_date" => "01/03/2024",
                 "category" => "OTC"
             ],
             [
@@ -1775,7 +1775,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "53250",
                 "harga_jual" => "57500",
-                 "expired_date" => "01/03/2024",
+                "expired_date" => "01/03/2024",
                 "category" => "OTC"
             ],
             [
@@ -1795,7 +1795,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "19300",
                 "harga_jual" => "21500",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -1805,7 +1805,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "35100",
                 "harga_jual" => "39000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -1815,7 +1815,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "25499.25",
                 "harga_jual" => "31000",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -1835,7 +1835,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "61479.35",
                 "harga_jual" => "68000",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "OTC"
             ],
             [
@@ -1845,7 +1845,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "28000",
                 "harga_jual" => "32200",
-                 "expired_date" => "01/06/2024",
+                "expired_date" => "01/06/2024",
                 "category" => "OTC"
             ],
             [
@@ -1855,7 +1855,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "38350",
                 "harga_jual" => "44000",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "OTC"
             ],
             [
@@ -1865,7 +1865,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "15800",
                 "harga_jual" => "18200",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -1875,7 +1875,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "20600",
                 "harga_jual" => "24000",
-                 "expired_date" => "01/04/2024",
+                "expired_date" => "01/04/2024",
                 "category" => "OTC"
             ],
             [
@@ -1905,7 +1905,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "49500",
                 "harga_jual" => "55000",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "OTC"
             ],
             [
@@ -1915,7 +1915,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "43800",
                 "harga_jual" => "48200",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -1925,7 +1925,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "19440",
                 "harga_jual" => "23500",
-                 "expired_date" => "01/09/2025",
+                "expired_date" => "01/09/2025",
                 "category" => "OTC"
             ],
             [
@@ -1935,7 +1935,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "7500",
                 "harga_jual" => "9000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -1955,7 +1955,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "7450",
                 "harga_jual" => "9000",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -1975,7 +1975,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "14000",
                 "harga_jual" => "15500",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -1985,7 +1985,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "15500",
                 "harga_jual" => "17000",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -2015,7 +2015,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "14100",
                 "harga_jual" => "15500",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -2025,7 +2025,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "17500",
                 "harga_jual" => "19500",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -2035,7 +2035,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "13200",
                 "harga_jual" => "15000",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "OTC"
             ],
             [
@@ -2055,7 +2055,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "14400",
                 "harga_jual" => "16000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -2085,7 +2085,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "104229",
                 "harga_jual" => "120000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -2095,7 +2095,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "8800",
                 "harga_jual" => "10200",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "OTC"
             ],
             [
@@ -2105,7 +2105,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "31080",
                 "harga_jual" => "32000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -2115,7 +2115,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "18648",
                 "harga_jual" => "24200",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -2125,7 +2125,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "31080",
                 "harga_jual" => "36000",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "OTC"
             ],
             [
@@ -2135,7 +2135,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "18648",
                 "harga_jual" => "22400",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -2175,7 +2175,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "7000",
                 "harga_jual" => "8500",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -2185,7 +2185,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "27861",
                 "harga_jual" => "36000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -2195,7 +2195,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "31080",
                 "harga_jual" => "36000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -2205,7 +2205,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 20,
                 "harga_beli" => "6774.3",
                 "harga_jual" => "8000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -2215,7 +2215,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 16,
                 "harga_beli" => "10125",
                 "harga_jual" => "11500",
-                 "expired_date" => "01/02/2027",
+                "expired_date" => "01/02/2027",
                 "category" => "OTC"
             ],
             [
@@ -2225,7 +2225,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "6774.3",
                 "harga_jual" => "8000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -2235,7 +2235,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "5850",
                 "harga_jual" => "7000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -2255,7 +2255,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 13,
                 "harga_beli" => "6427.5",
                 "harga_jual" => "7000",
-                 "expired_date" => "01/08/2026",
+                "expired_date" => "01/08/2026",
                 "category" => "OTC"
             ],
             [
@@ -2265,7 +2265,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "18737.8",
                 "harga_jual" => "22000",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2295,7 +2295,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "25067.8",
                 "harga_jual" => "29000",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -2305,7 +2305,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "16187.8",
                 "harga_jual" => "19000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -2315,7 +2315,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "40800",
                 "harga_jual" => "47000",
-                 "expired_date" => "01/03/2024",
+                "expired_date" => "01/03/2024",
                 "category" => "OTC"
             ],
             [
@@ -2325,7 +2325,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "10500",
                 "harga_jual" => "13000",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "OTC"
             ],
             [
@@ -2355,7 +2355,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "12099",
                 "harga_jual" => "14000",
-                 "expired_date" => "01/07/2027",
+                "expired_date" => "01/07/2027",
                 "category" => "OTC"
             ],
             [
@@ -2365,7 +2365,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "14652",
                 "harga_jual" => "17000",
-                 "expired_date" => "01/07/2027",
+                "expired_date" => "01/07/2027",
                 "category" => "OTC"
             ],
             [
@@ -2375,7 +2375,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "10434",
                 "harga_jual" => "12000",
-                 "expired_date" => "01/07/2027",
+                "expired_date" => "01/07/2027",
                 "category" => "OTC"
             ],
             [
@@ -2385,7 +2385,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "11322",
                 "harga_jual" => "13000",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2425,7 +2425,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "8523.8",
                 "harga_jual" => "10500",
-                 "expired_date" => "01/07/2026",
+                "expired_date" => "01/07/2026",
                 "category" => "OTC"
             ],
             [
@@ -2435,7 +2435,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "4950",
                 "harga_jual" => "5700",
-                 "expired_date" => "01/06/2026",
+                "expired_date" => "01/06/2026",
                 "category" => "OTC"
             ],
             [
@@ -2445,7 +2445,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "15962.5",
                 "harga_jual" => "18000",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2455,7 +2455,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "8048",
                 "harga_jual" => "9300",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2465,7 +2465,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "4690",
                 "harga_jual" => "5500",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2475,7 +2475,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "14705",
                 "harga_jual" => "17300",
-                 "expired_date" => "01/04/2028",
+                "expired_date" => "01/04/2028",
                 "category" => "OTC"
             ],
             [
@@ -2485,7 +2485,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "16150",
                 "harga_jual" => "19000",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2515,7 +2515,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "12210",
                 "harga_jual" => "14000",
-                 "expired_date" => "01/09/2028",
+                "expired_date" => "01/09/2028",
                 "category" => "OTC"
             ],
             [
@@ -2525,7 +2525,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "9064.6",
                 "harga_jual" => "12000",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "OTC"
             ],
             [
@@ -2535,7 +2535,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "23310",
                 "harga_jual" => "28000",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -2555,7 +2555,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "15288",
                 "harga_jual" => "18000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -2575,7 +2575,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "21753",
                 "harga_jual" => "25000",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -2595,7 +2595,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "46176",
                 "harga_jual" => "53000",
-                 "expired_date" => "01/02/2028",
+                "expired_date" => "01/02/2028",
                 "category" => "OTC"
             ],
             [
@@ -2615,7 +2615,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "6438",
                 "harga_jual" => "7500",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "OTC"
             ],
             [
@@ -2625,7 +2625,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "26900",
                 "harga_jual" => "31000",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2635,7 +2635,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "27269.3",
                 "harga_jual" => "31500",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2655,7 +2655,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "7030.34",
                 "harga_jual" => "8000",
-                 "expired_date" => "01/02/2028",
+                "expired_date" => "01/02/2028",
                 "category" => "OTC"
             ],
             [
@@ -2695,7 +2695,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "14850",
                 "harga_jual" => "17000",
-                 "expired_date" => "01/04/2027",
+                "expired_date" => "01/04/2027",
                 "category" => "OTC"
             ],
             [
@@ -2715,7 +2715,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "5550",
                 "harga_jual" => "6500",
-                 "expired_date" => "01/04/2027",
+                "expired_date" => "01/04/2027",
                 "category" => "OTC"
             ],
             [
@@ -2725,7 +2725,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "15641",
                 "harga_jual" => "18800",
-                 "expired_date" => "01/06/2027",
+                "expired_date" => "01/06/2027",
                 "category" => "OTC"
             ],
             [
@@ -2735,7 +2735,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "29936.7",
                 "harga_jual" => "34500",
-                 "expired_date" => "01/03/2027",
+                "expired_date" => "01/03/2027",
                 "category" => "OTC"
             ],
             [
@@ -2745,7 +2745,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "62992.5",
                 "harga_jual" => "76500",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2755,7 +2755,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "37920.8",
                 "harga_jual" => "44500",
-                 "expired_date" => "01/04/2028",
+                "expired_date" => "01/04/2028",
                 "category" => "OTC"
             ],
             [
@@ -2765,7 +2765,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "15910.7",
                 "harga_jual" => "22500",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -2775,7 +2775,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "9064.6",
                 "harga_jual" => "12000",
-                 "expired_date" => "01/04/2028",
+                "expired_date" => "01/04/2028",
                 "category" => "OTC"
             ],
             [
@@ -2805,7 +2805,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "14763",
                 "harga_jual" => "17000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -2815,7 +2815,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "14763",
                 "harga_jual" => "17000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -2825,7 +2825,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "44500",
                 "harga_jual" => "51200",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -2845,7 +2845,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "26300",
                 "harga_jual" => "31000",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -2855,7 +2855,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "14650",
                 "harga_jual" => "17500",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -2865,7 +2865,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "65212.5",
                 "harga_jual" => "75000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -2875,7 +2875,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "37185",
                 "harga_jual" => "43000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -2895,7 +2895,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "56508",
                 "harga_jual" => "65000",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -2945,7 +2945,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "15542",
                 "harga_jual" => "17500",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -2955,7 +2955,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "15540",
                 "harga_jual" => "18000",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -2975,7 +2975,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "12050",
                 "harga_jual" => "14000",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -3005,7 +3005,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "43200",
                 "harga_jual" => "49700",
-                 "expired_date" => "01/07/2024",
+                "expired_date" => "01/07/2024",
                 "category" => "SUPLEMEN"
             ],
             [
@@ -3015,7 +3015,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "10072.7",
                 "harga_jual" => "12000",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "OTC"
             ],
             [
@@ -3045,7 +3045,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 13,
                 "harga_beli" => "1875",
                 "harga_jual" => "2500",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -3055,7 +3055,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 13,
                 "harga_beli" => "4899.5",
                 "harga_jual" => "6000",
-                 "expired_date" => "01/09/2026",
+                "expired_date" => "01/09/2026",
                 "category" => "OTC"
             ],
             [
@@ -3065,7 +3065,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 13,
                 "harga_beli" => "4899.5",
                 "harga_jual" => "6000",
-                 "expired_date" => "01/03/2027",
+                "expired_date" => "01/03/2027",
                 "category" => "OTC"
             ],
             [
@@ -3075,7 +3075,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "188000",
                 "harga_jual" => "206800",
-                 "expired_date" => "01/06/2024",
+                "expired_date" => "01/06/2024",
                 "category" => "MINUMAN "
             ],
             [
@@ -3085,7 +3085,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "102060",
                 "harga_jual" => "113400",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "MINUMAN "
             ],
             [
@@ -3095,7 +3095,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 39,
                 "harga_beli" => "25000",
                 "harga_jual" => "29000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "MINUMAN "
             ],
             [
@@ -3105,7 +3105,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "92700",
                 "harga_jual" => "103000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "MINUMAN "
             ],
             [
@@ -3125,7 +3125,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "39988",
                 "harga_jual" => "46000",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "MINUMAN "
             ],
             [
@@ -3135,7 +3135,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "375000",
                 "harga_jual" => "487500",
-                 "expired_date" => "01/02/2028",
+                "expired_date" => "01/02/2028",
                 "category" => "OTC"
             ],
             [
@@ -3145,7 +3145,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "24420",
                 "harga_jual" => "28000",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "OTC"
             ],
             [
@@ -3165,7 +3165,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "39998",
                 "harga_jual" => "46000",
-                 "expired_date" => "01/05/2028",
+                "expired_date" => "01/05/2028",
                 "category" => "OTC"
             ],
             [
@@ -3175,7 +3175,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "8444.4",
                 "harga_jual" => "10000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "OTC"
             ],
             [
@@ -3185,7 +3185,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 60,
                 "harga_beli" => "2900",
                 "harga_jual" => "3500",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "OTC"
             ],
             [
@@ -3215,7 +3215,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 66,
                 "harga_beli" => "3150",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -3225,7 +3225,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "3150",
                 "harga_jual" => "6000",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -3235,7 +3235,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "10900",
                 "harga_jual" => "12500",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -3275,7 +3275,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 20,
                 "harga_beli" => "3405",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "OTC"
             ],
             [
@@ -3285,7 +3285,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 42,
                 "harga_beli" => "3286",
                 "harga_jual" => "4000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "OTC"
             ],
             [
@@ -3305,7 +3305,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "9000",
                 "harga_jual" => "12500",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -3325,7 +3325,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "8100",
                 "harga_jual" => "9500",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -3355,7 +3355,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 18,
                 "harga_beli" => "5918.5",
                 "harga_jual" => "7000",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "OTC"
             ],
             [
@@ -3375,7 +3375,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 13,
                 "harga_beli" => "1530",
                 "harga_jual" => "2000",
-                 "expired_date" => "01/07/2024",
+                "expired_date" => "01/07/2024",
                 "category" => "OTC"
             ],
             [
@@ -3425,7 +3425,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "29500",
                 "harga_jual" => "34000",
-                 "expired_date" => "01/05/2027",
+                "expired_date" => "01/05/2027",
                 "category" => "OTC"
             ],
             [
@@ -3455,7 +3455,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "49500",
                 "harga_jual" => "57000",
-                 "expired_date" => "01/05/2024",
+                "expired_date" => "01/05/2024",
                 "category" => "OTC"
             ],
             [
@@ -3465,7 +3465,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "54000",
                 "harga_jual" => "62000",
-                 "expired_date" => "01/09/2024",
+                "expired_date" => "01/09/2024",
                 "category" => "OTC"
             ],
             [
@@ -3475,7 +3475,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "49500",
                 "harga_jual" => "57000",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -3485,7 +3485,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "54000",
                 "harga_jual" => "62000",
-                 "expired_date" => "01/04/2024",
+                "expired_date" => "01/04/2024",
                 "category" => "OTC"
             ],
             [
@@ -3505,7 +3505,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "4500",
                 "harga_jual" => "5200",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "OTC"
             ],
             [
@@ -3515,7 +3515,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "17500",
                 "harga_jual" => "20200",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "OTC"
             ],
             [
@@ -3525,7 +3525,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "779.5",
                 "harga_jual" => "1000",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "OTC"
             ],
             [
@@ -3545,7 +3545,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "52170",
                 "harga_jual" => "60000",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "OTC"
             ],
             [
@@ -3555,7 +3555,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "777",
                 "harga_jual" => "1000",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -3565,7 +3565,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "777",
                 "harga_jual" => "1000",
-                 "expired_date" => "01/06/2026",
+                "expired_date" => "01/06/2026",
                 "category" => "OTC"
             ],
             [
@@ -3585,7 +3585,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 18,
                 "harga_beli" => "1170",
                 "harga_jual" => "1200",
-                 "expired_date" => "01/08/2023",
+                "expired_date" => "01/08/2023",
                 "category" => "OTC"
             ],
             [
@@ -3595,7 +3595,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "24059.3",
                 "harga_jual" => "29000",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -3605,7 +3605,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "15662.1",
                 "harga_jual" => "19000",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "OTC"
             ],
             [
@@ -3635,7 +3635,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 9,
                 "harga_beli" => "6489",
                 "harga_jual" => "7500",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "OTC"
             ],
             [
@@ -3665,7 +3665,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "13600",
                 "harga_jual" => "15500",
-                 "expired_date" => "01/09/2024",
+                "expired_date" => "01/09/2024",
                 "category" => "OTC"
             ],
             [
@@ -3675,7 +3675,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "18400",
                 "harga_jual" => "21000",
-                 "expired_date" => "01/09/2024",
+                "expired_date" => "01/09/2024",
                 "category" => "OTC"
             ],
             [
@@ -3685,7 +3685,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "15400",
                 "harga_jual" => "17700",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -3695,7 +3695,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "14400",
                 "harga_jual" => "17700",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "OTC"
             ],
             [
@@ -3705,7 +3705,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "14500",
                 "harga_jual" => "17700",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "OTC"
             ],
             [
@@ -3715,7 +3715,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "5813",
                 "harga_jual" => "6800",
-                 "expired_date" => "01/08/2026",
+                "expired_date" => "01/08/2026",
                 "category" => "OTC"
             ],
             [
@@ -3725,7 +3725,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "20052",
                 "harga_jual" => "23000",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "OTC"
             ],
             [
@@ -3735,7 +3735,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "11507.4",
                 "harga_jual" => "13200",
-                 "expired_date" => "01/08/2026",
+                "expired_date" => "01/08/2026",
                 "category" => "OTC"
             ],
             [
@@ -3745,7 +3745,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "20767",
                 "harga_jual" => "23900",
-                 "expired_date" => "01/07/2026",
+                "expired_date" => "01/07/2026",
                 "category" => "OTC"
             ],
             [
@@ -3755,7 +3755,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "45500",
                 "harga_jual" => "52200",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "OTC"
             ],
             [
@@ -3765,7 +3765,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "24975",
                 "harga_jual" => "28500",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "OTC"
             ],
             [
@@ -3775,7 +3775,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "64000",
                 "harga_jual" => "67200",
-                 "expired_date" => "01/09/2026",
+                "expired_date" => "01/09/2026",
                 "category" => "OTC"
             ],
             [
@@ -3795,7 +3795,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "27700",
                 "harga_jual" => "31800",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "OTC"
             ],
             [
@@ -3815,7 +3815,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "65934",
                 "harga_jual" => "73260",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "OTC"
             ],
             [
@@ -3845,7 +3845,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "22200",
                 "harga_jual" => "24500",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "PERAWATAN WANITA"
             ],
             [
@@ -5435,7 +5435,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "5000",
                 "harga_jual" => "5750",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "ALKES"
             ],
             [
@@ -5485,7 +5485,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "3400",
                 "harga_jual" => "3910",
-                 "expired_date" => "01/07/2024",
+                "expired_date" => "01/07/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -5685,7 +5685,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "15963.2",
                 "harga_jual" => "18358",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5705,7 +5705,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 24,
                 "harga_beli" => "4662",
                 "harga_jual" => "5361",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5715,7 +5715,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "8449.9",
                 "harga_jual" => "9717",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5725,7 +5725,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "3000",
                 "harga_jual" => "3450",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5745,7 +5745,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "59500",
                 "harga_jual" => "68425",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5755,7 +5755,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "1410",
                 "harga_jual" => "1622",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -5765,7 +5765,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "4600",
                 "harga_jual" => "5290",
-                 "expired_date" => "01/07/2024",
+                "expired_date" => "01/07/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -5775,7 +5775,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 13,
                 "harga_beli" => "1256",
                 "harga_jual" => "1444",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5785,7 +5785,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "1716",
                 "harga_jual" => "1973",
-                 "expired_date" => "01/08/2026",
+                "expired_date" => "01/08/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -5795,7 +5795,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "2173",
                 "harga_jual" => "2499",
-                 "expired_date" => "01/05/2024",
+                "expired_date" => "01/05/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -5805,7 +5805,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 85,
                 "harga_beli" => "2250",
                 "harga_jual" => "2588",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5815,7 +5815,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "23332.8",
                 "harga_jual" => "26833",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5835,7 +5835,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 50,
                 "harga_beli" => "25000",
                 "harga_jual" => "28750",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5845,7 +5845,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "17500",
                 "harga_jual" => "20125",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5855,7 +5855,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 20,
                 "harga_beli" => "25000",
                 "harga_jual" => "28750",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5865,7 +5865,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 30,
                 "harga_beli" => "33000",
                 "harga_jual" => "37950",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5875,7 +5875,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 30,
                 "harga_beli" => "131166.67",
                 "harga_jual" => "150842",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5885,7 +5885,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 35,
                 "harga_beli" => "3000",
                 "harga_jual" => "3450",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5895,7 +5895,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "10500",
                 "harga_jual" => "12075",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -5905,7 +5905,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "8500",
                 "harga_jual" => "9775",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -5915,7 +5915,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 20,
                 "harga_beli" => "31500",
                 "harga_jual" => "36225",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -5955,7 +5955,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "4950",
                 "harga_jual" => "5693",
-                 "expired_date" => "01/03/2027",
+                "expired_date" => "01/03/2027",
                 "category" => "ETHICAL"
             ],
             [
@@ -5965,7 +5965,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "6350",
                 "harga_jual" => "7303",
-                 "expired_date" => "01/02/2024",
+                "expired_date" => "01/02/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -5975,7 +5975,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "7150",
                 "harga_jual" => "8223",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6015,7 +6015,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 30,
                 "harga_beli" => "56600",
                 "harga_jual" => "65090",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6025,7 +6025,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 9,
                 "harga_beli" => "5050",
                 "harga_jual" => "5808",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6035,7 +6035,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 5,
                 "harga_beli" => "4150",
                 "harga_jual" => "4773",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6045,7 +6045,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "5050",
                 "harga_jual" => "5808",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6065,7 +6065,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 6,
                 "harga_beli" => "8050",
                 "harga_jual" => "9258",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6075,7 +6075,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "4500",
                 "harga_jual" => "5175",
-                 "expired_date" => "01/04/2027",
+                "expired_date" => "01/04/2027",
                 "category" => "ETHICAL"
             ],
             [
@@ -6085,7 +6085,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "11984.45",
                 "harga_jual" => "13782",
-                 "expired_date" => "01/08/2024",
+                "expired_date" => "01/08/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -6095,7 +6095,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "8968.90",
                 "harga_jual" => "10314",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6105,7 +6105,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "7200",
                 "harga_jual" => "8280",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6115,7 +6115,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "11700",
                 "harga_jual" => "13455",
-                 "expired_date" => "01/04/2025",
+                "expired_date" => "01/04/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6125,7 +6125,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "3600",
                 "harga_jual" => "4140",
-                 "expired_date" => "01/06/2024",
+                "expired_date" => "01/06/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -6135,7 +6135,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 30,
                 "harga_beli" => "5140",
                 "harga_jual" => "5911",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6155,7 +6155,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "9700",
                 "harga_jual" => "11155",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6165,7 +6165,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 20,
                 "harga_beli" => "88000",
                 "harga_jual" => "101200",
-                 "expired_date" => "01/02/2025",
+                "expired_date" => "01/02/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6195,7 +6195,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "5006.1",
                 "harga_jual" => "5757",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6225,7 +6225,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "70000",
                 "harga_jual" => "80500",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6235,7 +6235,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "30000.6",
                 "harga_jual" => "34501",
-                 "expired_date" => "01/06/2026",
+                "expired_date" => "01/06/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6245,7 +6245,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "174611.47",
                 "harga_jual" => "200803",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6255,7 +6255,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "2400",
                 "harga_jual" => "2760",
-                 "expired_date" => "01/07/2026",
+                "expired_date" => "01/07/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6275,7 +6275,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "9500",
                 "harga_jual" => "10925",
-                 "expired_date" => "01/02/2026",
+                "expired_date" => "01/02/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6285,7 +6285,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 10,
                 "harga_beli" => "61000",
                 "harga_jual" => "70150",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6305,7 +6305,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "6850",
                 "harga_jual" => "7878",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6315,7 +6315,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "4500",
                 "harga_jual" => "5175",
-                 "expired_date" => "01/07/2025",
+                "expired_date" => "01/07/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6345,7 +6345,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "10450",
                 "harga_jual" => "12018",
-                 "expired_date" => "01/09/2024",
+                "expired_date" => "01/09/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -6355,7 +6355,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "11000",
                 "harga_jual" => "12650",
-                 "expired_date" => "01/06/2024",
+                "expired_date" => "01/06/2024",
                 "category" => "ETHICAL"
             ],
             [
@@ -6365,7 +6365,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 4,
                 "harga_beli" => "33285",
                 "harga_jual" => "38278",
-                 "expired_date" => "01/03/2025",
+                "expired_date" => "01/03/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6375,7 +6375,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "27100",
                 "harga_jual" => "31165",
-                 "expired_date" => "01/08/2025",
+                "expired_date" => "01/08/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6395,7 +6395,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "8582",
                 "harga_jual" => "9869",
-                 "expired_date" => "01/04/2026",
+                "expired_date" => "01/04/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6415,7 +6415,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "12900",
                 "harga_jual" => "14835",
-                 "expired_date" => "01/06/2025",
+                "expired_date" => "01/06/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6435,7 +6435,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "101000",
                 "harga_jual" => "116150",
-                 "expired_date" => "01/03/2026",
+                "expired_date" => "01/03/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6445,7 +6445,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "48652.52",
                 "harga_jual" => "55950",
-                 "expired_date" => "01/06/2026",
+                "expired_date" => "01/06/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6465,7 +6465,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 3,
                 "harga_beli" => "8000",
                 "harga_jual" => "9200",
-                 "expired_date" => "01/03/2027",
+                "expired_date" => "01/03/2027",
                 "category" => "ETHICAL"
             ],
             [
@@ -6485,7 +6485,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "15517",
                 "harga_jual" => "17845",
-                 "expired_date" => "01/09/2025",
+                "expired_date" => "01/09/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6495,7 +6495,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "40530",
                 "harga_jual" => "46610",
-                 "expired_date" => "01/05/2026",
+                "expired_date" => "01/05/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6505,7 +6505,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "80000",
                 "harga_jual" => "92000",
-                 "expired_date" => "01/08/2027",
+                "expired_date" => "01/08/2027",
                 "category" => "ETHICAL"
             ],
             [
@@ -6515,7 +6515,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 1,
                 "harga_beli" => "15609.6",
                 "harga_jual" => "17951",
-                 "expired_date" => "01/05/2027",
+                "expired_date" => "01/05/2027",
                 "category" => "ETHICAL"
             ],
             [
@@ -6525,7 +6525,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 2,
                 "harga_beli" => "8200",
                 "harga_jual" => "9430",
-                 "expired_date" => "01/05/2025",
+                "expired_date" => "01/05/2025",
                 "category" => "ETHICAL"
             ],
             [
@@ -6535,7 +6535,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 20,
                 "harga_beli" => "182700",
                 "harga_jual" => "210105",
-                 "expired_date" => "01/04/2028",
+                "expired_date" => "01/04/2028",
                 "category" => "ETHICAL"
             ],
             [
@@ -6545,7 +6545,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 20,
                 "harga_beli" => "194600",
                 "harga_jual" => "223790",
-                 "expired_date" => "01/08/2026",
+                "expired_date" => "01/08/2026",
                 "category" => "ETHICAL"
             ],
             [
@@ -6555,7 +6555,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 16,
                 "harga_beli" => "13050",
                 "harga_jual" => "14500",
-                 "expired_date" => "01/06/2026",
+                "expired_date" => "01/06/2026",
                 "category" => ""
             ],
             [
@@ -6615,7 +6615,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "5460",
                 "harga_jual" => "6279",
-                 "expired_date" => "01/06/2024",
+                "expired_date" => "01/06/2024",
                 "category" => "MINUMAN"
             ],
             [
@@ -6625,7 +6625,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 24,
                 "harga_beli" => "5400",
                 "harga_jual" => "6210",
-                 "expired_date" => "01/06/2024",
+                "expired_date" => "01/06/2024",
                 "category" => "MINUMAN"
             ],
             [
@@ -6635,7 +6635,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 12,
                 "harga_beli" => "6100",
                 "harga_jual" => "7015",
-                 "expired_date" => "01/06/2024",
+                "expired_date" => "01/06/2024",
                 "category" => "MINUMAN"
             ],
             [
@@ -6645,7 +6645,7 @@ class ProdukTableSeeder extends Seeder
                 "stok" => 20,
                 "harga_beli" => "1636.36",
                 "harga_jual" => "1882",
-                 "expired_date" => "01/06/2024",
+                "expired_date" => "01/06/2024",
                 "category" => "MINUMAN"
             ],
             [
@@ -6710,11 +6710,24 @@ class ProdukTableSeeder extends Seeder
             ]
         ];
 
+        $categoryCount = [];
+
         foreach ($produk as $key => $value) {
-            $category = Kategori::whereName($value['category'])->first();
-            if (!$category) {
-                $category = Kategori::create(['name' => $value['category']]);
+            \Log::info($categoryCount);
+            if ($value['category'] != "") {
+                $category = Kategori::whereName($value['category'])->first();
+                if (!$category) {
+                    $category = Kategori::create(['name' => $value['category']]);
+                }
+
+                if (array_key_exists($value['category'], $categoryCount)) {
+                    $categoryCount[$value['category']] += 1;
+                } else {
+                    $categoryCount[$value['category']] = 1;
+                }
             }
+
+
 
             $satuan = Satuan::whereName($value['satuan'])->first();
             if (!$satuan) {
@@ -6722,13 +6735,13 @@ class ProdukTableSeeder extends Seeder
             }
 
             Produk::create([
-                "id_kategori" => $category->id,
-                "sku" => mb_substr($value['category'] ?? '', 0, 4) . preg_replace('/\b(\w)\w*\W*/', '\1', $value['name'] ?? '') . $key,
+                "id_kategori" => $value['category'] == "" ? null : $category->id,
+                "sku" => mb_substr($value['category'] ?? '', 0, 4) . preg_replace('/\b(\w)\w*\W*/', '\1', $value['name'] ?? '') . ($categoryCount[$value['category']] ?? $key),
                 "name" => $value['name'],
                 "satuan" => $value['satuan'],
                 "stok" => $value['stok'],
-                "harga_beli" => $value['harga_beli']==''?0: $value['harga_beli'],
-                "harga_jual" => $value['harga_jual']==''?0: $value['harga_jual'],
+                "harga_beli" => $value['harga_beli'] == '' ? 0 : ceil($value['harga_beli']),
+                "harga_jual" => $value['harga_jual'] == '' ? 0 : ceil($value['harga_jual']),
                 "expired_date" => date("Y-m-d", strtotime($value['expired_date'])),
                 "merk" => "",
                 "diskon" => 0

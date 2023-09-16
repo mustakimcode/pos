@@ -26,7 +26,7 @@ class ProdukController extends Controller
 
     public function data()
     {
-        $produk = Produk::join('kategori', 'kategori.id', 'produk.id_kategori')
+        $produk = Produk::leftJoin('kategori', 'kategori.id', 'produk.id_kategori')
             ->select('produk.*', 'kategori.name as category_name')
             // ->orderBy('sku', 'asc')
             ->get();
@@ -54,8 +54,9 @@ class ProdukController extends Controller
             ->addColumn('aksi', function ($produk) {
                 return '
                 <div class="btn-group">
-                    <button type="button" onclick="editForm(`' . route('produk.update', $produk->id) . '`)" class="btn btn-xs btn-info btn-flat"><i class="fa fa-pencil"></i></button>
-                    <button type="button" onclick="deleteData(`' . route('produk.destroy', $produk->id) . '`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
+                    <button type="button" onclick="kartuStock(`' . route('produk.kartu-stok', $produk->id) . '`)" class="btn btn-xs btn-primary btn-flat">Kartu Stok</button>
+                    <button type="button" onclick="editForm(`' . route('produk.update', $produk->id) . '`)" class="btn btn-xs btn-info btn-flat">Edit</button>
+                    <button type="button" onclick="deleteData(`' . route('produk.destroy', $produk->id) . '`)" class="btn btn-xs btn-danger btn-flat">Delete</button>
                 </div>
                 ';
             })
@@ -81,7 +82,16 @@ class ProdukController extends Controller
      */
     public function store(Request $request)
     {
-        Produk::create($request->all());
+        if ($request->id_kategori) {
+            $category = Kategori::where('id',  $request->id_kategori)->first();
+            $productCategoryCount = Produk::where('id_kategori',  $request->id_kategori)->count();
+        } else {
+            $productCategoryCount = Produk::latest()->first() ?? new Produk();
+        }
+
+        $request['sku'] = mb_substr($category->name ?? '', 0, 4) . preg_replace('/\b(\w)\w*\W*/', '\1', strtoupper($request->name) ?? '') . ($productCategoryCount ?? $productCategoryCount->id);
+        $produk = Produk::create($request->all());
+
         return response()->json('Data berhasil disimpan', 200);
     }
 
@@ -132,6 +142,8 @@ class ProdukController extends Controller
 
         return response()->json($output);
     }
+
+
 
     /**
      * Show the form for editing the specified resource.

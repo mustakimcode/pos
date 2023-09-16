@@ -44,14 +44,14 @@ class PenjualanDetailController extends Controller
 
         foreach ($detail as $item) {
             $row = array();
-            $row['sku'] = '<span class="label label-success">'. $item->produk['sku'] .'</span';
+            $row['sku'] = '<span class="label label-success">' . $item->produk['sku'] . '</span';
             $row['name'] = $item->produk['name'];
-            $row['harga_jual']  = 'Rp. '. format_uang($item->harga_jual);
-            $row['jumlah']      = '<input type="number" class="form-control input-sm quantity" data-id="'. $item->id_penjualan_detail .'" value="'. $item->jumlah .'">';
+            $row['harga_jual']  = 'Rp. ' . format_uang($item->harga_jual);
+            $row['jumlah']      = '<input type="number" class="form-control input-sm quantity" data-id="' . $item->id_penjualan_detail . '" value="' . $item->jumlah . '">';
             $row['diskon']      = $item->diskon . '%';
-            $row['subtotal']    = 'Rp. '. format_uang($item->subtotal);
+            $row['subtotal']    = 'Rp. ' . format_uang($item->subtotal);
             $row['aksi']        = '<div class="btn-group">
-                                    <button onclick="deleteData(`'. route('transaksi.destroy', $item->id_penjualan_detail) .'`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
+                                    <button onclick="deleteData(`' . route('transaksi.destroy', $item->id_penjualan_detail) . '`)" class="btn btn-xs btn-danger btn-flat"><i class="fa fa-trash"></i></button>
                                 </div>';
             $data[] = $row;
 
@@ -60,8 +60,8 @@ class PenjualanDetailController extends Controller
         }
         $data[] = [
             'sku' => '
-                <div class="total hide">'. $total .'</div>
-                <div class="total_item hide">'. $total_item .'</div>',
+                <div class="total hide">' . $total . '</div>
+                <div class="total_item hide">' . $total_item . '</div>',
             'name' => '',
             'harga_jual'  => '',
             'jumlah'      => '',
@@ -80,7 +80,7 @@ class PenjualanDetailController extends Controller
     public function store(Request $request)
     {
         $produk = Produk::where('id', $request->id)->first();
-        if (! $produk) {
+        if (!$produk) {
             return response()->json('Data gagal disimpan', 400);
         }
 
@@ -98,6 +98,12 @@ class PenjualanDetailController extends Controller
 
     public function update(Request $request, $id)
     {
+        if ($request->biaya_resep) {
+            $detail = Penjualan::find($id);
+            $detail->biaya_resep = $request->biaya_resep;
+            $detail->update();
+        }
+
         $detail = PenjualanDetail::find($id);
         $detail->jumlah = $request->jumlah;
         $detail->subtotal = $detail->harga_jual * $request->jumlah - (($detail->diskon * $request->jumlah) / 100 * $detail->harga_jual);;
@@ -112,17 +118,18 @@ class PenjualanDetailController extends Controller
         return response(null, 204);
     }
 
-    public function loadForm($diskon = 0, $total = 0, $diterima = 0)
+    public function loadForm($diskon = 0, $total = 0, $diterima = 0, $resep = 0)
     {
-        $bayar   = $total - ($diskon / 100 * $total);
+        $bayar   = ($total + $resep) - ($diskon / 100 * $total);
         $kembali = ($diterima != 0) ? $diterima - $bayar : 0;
         $data    = [
             'totalrp' => format_uang($total),
             'bayar' => $bayar,
             'bayarrp' => format_uang($bayar),
-            'terbilang' => ucwords(terbilang($bayar). ' Rupiah'),
+            'terbilang' => ucwords(terbilang($bayar) . ' Rupiah'),
             'kembalirp' => format_uang($kembali),
-            'kembali_terbilang' => ucwords(terbilang($kembali). ' Rupiah'),
+            'resep' => format_uang($resep),
+            'kembali_terbilang' => ucwords(terbilang($kembali) . ' Rupiah'),
         ];
 
         return response()->json($data);

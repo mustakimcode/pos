@@ -4,6 +4,7 @@ use App\Http\Controllers\{
     DashboardController,
     KategoriController,
     LaporanController,
+    LaporanObatController,
     ProdukController,
     MemberController,
     PengeluaranController,
@@ -44,6 +45,8 @@ Route::group(['middleware' => 'auth'], function () {
         Route::resource('/satuan', SatuanController::class);
 
         Route::get('/produk/data', [ProdukController::class, 'data'])->name('produk.data');
+        Route::get('/produk/kartu-stok/{id}', [LaporanObatController::class, 'kartustock'])->name('produk.kartu-stok');
+        Route::get('/produk/laporan/{id}', [ProdukController::class, 'laporan'])->name('produk.laporan');
         Route::post('/produk/delete-selected', [ProdukController::class, 'deleteSelected'])->name('produk.delete_selected');
         Route::post('/produk/cetak-barcode', [ProdukController::class, 'cetakBarcode'])->name('produk.cetak_barcode');
         Route::resource('/produk', ProdukController::class);
@@ -82,15 +85,21 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/transaksi/nota-besar', [PenjualanController::class, 'notaBesar'])->name('transaksi.nota_besar');
 
         Route::get('/transaksi/{id}/data', [PenjualanDetailController::class, 'data'])->name('transaksi.data');
-        Route::get('/transaksi/loadform/{diskon}/{total}/{diterima}', [PenjualanDetailController::class, 'loadForm'])->name('transaksi.load_form');
+        Route::get('/transaksi/loadform/{diskon}/{total}/{diterima}/{resep}', [PenjualanDetailController::class, 'loadForm'])->name('transaksi.load_form');
         Route::resource('/transaksi', PenjualanDetailController::class)
             ->except('create', 'show', 'edit');
     });
 
     Route::group(['middleware' => 'level:1'], function () {
         Route::get('/laporan', [LaporanController::class, 'index'])->name('laporan.index');
+        Route::get('/laporan/{tanggal}', [LaporanController::class, 'view'])->name('laporan.view');
         Route::get('/laporan/data/{awal}/{akhir}', [LaporanController::class, 'data'])->name('laporan.data');
         Route::get('/laporan/pdf/{awal}/{akhir}', [LaporanController::class, 'exportPDF'])->name('laporan.export_pdf');
+
+        Route::get('/laporan-obat', [LaporanObatController::class, 'index'])->name('laporan.obat.index');
+        Route::get('/laporan-obat/{tanggal}', [LaporanObatController::class, 'view'])->name('laporan.obat.view');
+        Route::get('/laporan-obat/data/{awal}/{akhir}', [LaporanObatController::class, 'data'])->name('laporan.obat.data');
+        Route::get('/laporan-obat/pdf/{awal}/{akhir}', [LaporanObatController::class, 'exportPDF'])->name('laporan.obat.export_pdf');
 
         Route::get('/user/data', [UserController::class, 'data'])->name('user.data');
         Route::resource('/user', UserController::class);

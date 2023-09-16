@@ -39,11 +39,11 @@
                     <i class="fa fa-cubes"></i> <span>Produk</span>
                 </a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="{{ route('member.index') }}">
                     <i class="fa fa-id-card"></i> <span>Member</span>
                 </a>
-            </li>
+            </li> -->
             <li>
                 <a href="{{ route('supplier.index') }}">
                     <i class="fa fa-truck"></i> <span>Supplier</span>
@@ -70,11 +70,18 @@
                     <i class="fa fa-cart-arrow-down"></i> <span>Transaksi Baru</span>
                 </a>
             </li>
-            <li class="header">REPORT</li>
-            <li>
-                <a href="{{ route('laporan.index') }}">
-                    <i class="fa fa-file-pdf-o"></i> <span>Laporan</span>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-pie-chart"></i>
+                    <span>Laporan</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                 </a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ route('laporan.index') }}"><i class="fa fa-circle-o"></i> Laporan Penghasilan</a></li>
+                    <li><a href="{{ route('laporan.obat.index') }}"><i class="fa fa-circle-o"></i> Laporan Obat</a></li>
+                </ul>
             </li>
             <li class="header">SYSTEM</li>
             <li>

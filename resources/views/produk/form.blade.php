@@ -18,13 +18,6 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="sku" class="col-lg-2 col-lg-offset-1 control-label">Sku</label>
-                        <div class="col-lg-6">
-                            <input type="text" name="sku" id="sku" class="form-control" required autofocus>
-                            <span class="help-block with-errors"></span>
-                        </div>
-                    </div>
-                    <div class="form-group row">
                         <label for="id_kategori" class="col-lg-2 col-lg-offset-1 control-label">Kategori</label>
                         <div class="col-lg-6">
                             <select name="id_kategori" id="id_kategori" class="form-control" required>
@@ -58,7 +51,7 @@
                     <div class="form-group row">
                         <label for="expired_date" class="col-lg-2 col-lg-offset-1 control-label">Expired Date</label>
                         <div class="col-lg-6">
-                            <input type="date" name="expired_date" id="expired_date" class="form-control">
+                            <input type="date" name="expired_date" id="expired_date" class="form-control" required>
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
@@ -95,7 +88,7 @@
                         <button type="button" class="btn btn-sm btn-flat btn-warning" data-dismiss="modal"><i class="fa fa-arrow-circle-left"></i> Batal</button>
                     </div>
                 </form>
-
+<!--
                 <li class="active">Kartu Stok Bulan Ini</li>
                 <table class="table table-bordered" id="table-stock-card">
                     <thead>
@@ -107,7 +100,7 @@
                     </thead>
                     <tbody>
                     </tbody>
-                </table>
+                </table> -->
             </div>
         </div>
     </div>

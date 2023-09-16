@@ -71,7 +71,7 @@ Daftar Produk
                 {
                     data: 'DT_RowIndex',
                     searchable: false,
-                    sortable: false
+                    sortable: true
                 },
                 {
                     data: 'sku'
@@ -126,6 +126,15 @@ Daftar Produk
             $(':checkbox').prop('checked', this.checked);
         });
     });
+
+
+    function kartuStock(url) {
+        window.location = url;
+    }
+
+    function laporan(url) {
+        window.location = url;
+    }
 
     function addForm(url) {
         $('#modal-form').modal('show');

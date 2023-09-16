@@ -94,7 +94,43 @@ Dashboard
                 <!-- /.row -->
             </div>
 
+            <div class="box">
+                <div class="box-header with-border">
+                    <h3 class="box-title">10 Terbanyak dibeli {{ tanggal_indonesia($tanggal_awal, false) }} s/d {{ tanggal_indonesia($tanggal_akhir, false) }}</h3>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="box-body table-responsive">
+                                <div class="box-body table-responsive">
+                                    <table class="table table-stiped table-bordered">
+                                        <thead>
+                                            <th width="5%">No</th>
+                                            <th>Obat</th>
+                                            <th>Qty Penjualan</th>
+                                            <th>Nominal Penjualan</th>
+                                        </thead>
+                                        <tbody>
+                                            @foreach($mostBuyObat ?? [] as $index => $data)
+                                            <tr>
+                                                <td>{{$index+1}}</td>
+                                                <td>{{$data->name}}</td>
+                                                <td>{{$data->qty_penjualan ?? 0}}</td>
+                                                <td>{{$data->total_penjualan ?? 0}}</td>
 
+                                            </tr>
+                                            @endforeach
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
             <div class="box">
                 <div class="box-header with-border">
                     <h3 class="box-title">Penjualan {{tanggal_indonesia(date('Y-m-d'), false)}}</h3>

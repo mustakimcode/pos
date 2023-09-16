@@ -1,12 +1,12 @@
 @extends('layouts.master')
 
 @section('title')
-    Pengaturan
+Pengaturan
 @endsection
 
 @section('breadcrumb')
-    @parent
-    <li class="active">Pengaturan</li>
+@parent
+<li class="active">Pengaturan</li>
 @endsection
 
 @section('content')
@@ -44,8 +44,7 @@
                     <div class="form-group row">
                         <label for="path_logo" class="col-lg-2 control-label">Logo Perusahaan</label>
                         <div class="col-lg-4">
-                            <input type="file" name="path_logo" class="form-control" id="path_logo"
-                                onchange="preview('.tampil-logo', this.files[0])">
+                            <input type="file" name="path_logo" class="form-control" id="path_logo" onchange="preview('.tampil-logo', this.files[0])">
                             <span class="help-block with-errors"></span>
                             <br>
                             <div class="tampil-logo"></div>
@@ -54,8 +53,7 @@
                     <div class="form-group row">
                         <label for="path_kartu_member" class="col-lg-2 control-label">Kartu Member</label>
                         <div class="col-lg-4">
-                            <input type="file" name="path_kartu_member" class="form-control" id="path_kartu_member"
-                                onchange="preview('.tampil-kartu-member', this.files[0], 300)">
+                            <input type="file" name="path_kartu_member" class="form-control" id="path_kartu_member" onchange="preview('.tampil-kartu-member', this.files[0], 300)">
                             <span class="help-block with-errors"></span>
                             <br>
                             <div class="tampil-kartu-member"></div>
@@ -78,49 +76,92 @@
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label for="diskon" class="col-lg-2 control-label">Diskon</label>
+                        <div class="corm-input col-12">
+                            <div class="col-lg-10">
+                                <input type="number" name="diskon" class="form-control" id="diskon" required>
+                                <span class="help-block with-errors"></span>
+                            </div>
+                            <div class="col-lg-10">
+                                <input type="number" name="diskon" class="form-control" id="diskon" required>
+                                <span class="help-block with-errors"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group row">
+                        <label for="diskon" class="col-lg-2 control-label">Harge Resep</label>
+                        <div class="col-lg-6">
+                            <div id="row">
+                                <div class="col-md-2">
+                                    <input type="text" name="dari[]" class="form-control m-input col-md-2" placeholder="dari">
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text" name="ke[]" class="form-control m-input col-md-2" placeholder="ke">
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text" name="harga[]" class="form-control m-input col-md-2" placeholder="harga">
+                                </div>
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-danger" id="DeleteRow" type="button">
+                                        <i class="bi bi-trash"></i>
+                                        Delete
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="newinput"></div>
+                        </div>
+
+                        <button id="rowAdder" type="button" class="btn btn-dark">
+                            <span class="bi bi-plus-square-dotted">
+                            </span> ADD
+                        </button>
+                    </div> -->
                 </div>
-                <div class="box-footer text-right">
-                    <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i> Simpan Perubahan</button>
-                </div>
-            </form>
         </div>
+        <div class="box-footer text-right">
+            <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i> Simpan Perubahan</button>
+        </div>
+        </form>
     </div>
+</div>
 </div>
 @endsection
 
 @push('scripts')
 <script>
-    $(function () {
+    $(function() {
         showData();
 
-        $('.form-setting').validator().on('submit', function (e) {
-            if (! e.preventDefault()) {
+        $('.form-setting').validator().on('submit', function(e) {
+            if (!e.preventDefault()) {
                 $.ajax({
-                    url: $('.form-setting').attr('action'),
-                    type: $('.form-setting').attr('method'),
-                    data: new FormData($('.form-setting')[0]),
-                    async: false,
-                    processData: false,
-                    contentType: false
-                })
-                .done(response => {
-                    showData();
-                    $('.alert').fadeIn();
+                        url: $('.form-setting').attr('action'),
+                        type: $('.form-setting').attr('method'),
+                        data: new FormData($('.form-setting')[0]),
+                        async: false,
+                        processData: false,
+                        contentType: false
+                    })
+                    .done(response => {
+                        showData();
+                        $('.alert').fadeIn();
 
-                    setTimeout(() => {
-                        $('.alert').fadeOut();
-                    }, 3000);
-                })
-                .fail(errors => {
-                    alert('Tidak dapat menyimpan data');
-                    return;
-                });
+                        setTimeout(() => {
+                            $('.alert').fadeOut();
+                        }, 3000);
+                    })
+                    .fail(errors => {
+                        alert('Tidak dapat menyimpan data');
+                        return;
+                    });
             }
         });
     });
 
     function showData() {
-        $.get('{{ route('setting.show') }}')
+        $.get("{{ route('setting.show') }}")
             .done(response => {
                 $('[name=name_perusahaan]').val(response.name_perusahaan);
                 $('[name=telephone]').val(response.telephone);
@@ -130,7 +171,7 @@
                 $('title').text(response.name_perusahaan + ' | Pengaturan');
 
                 let words = response.name_perusahaan.split(' ');
-                let word  = '';
+                let word = '';
                 words.forEach(w => {
                     word += w.charAt(0);
                 });
@@ -146,5 +187,51 @@
                 return;
             });
     }
+
+    $("#rowAdder").click(function() {
+        newRowAdd =
+            '<div id="row">' +
+            '                    <div class="col-lg-2">' +
+            '                        <input type="text" name="dari[]" class="form-control col-md-3" placeholder="dari">' +
+            '                    </div>' +
+            '                    <div class="col-lg-2">' +
+            '                        <input type="text" name="ke[]" class="form-control col-md-3" placeholder="ke">' +
+            '                    </div>' +
+            '                    <div class="col-lg-2">' +
+            '                        <input type="text" name="harga[]" class="form-control col-md-3" placeholder="harga">' +
+            '                    </div>' +
+            '                </div>';
+
+        $('#newinput').append(newRowAdd);
+    });
+    $("body").on("click", "#DeleteRow", function() {
+        $(this).parents("#row").remove();
+    })
+
+    $("#rowAdder").click(function() {
+        newRowAdd =
+            '<div id="row">' +
+            '    <div class="col-md-2">' +
+            '        <input type="text" name="dari[]" class="form-control m-input col-md-2" placeholder="dari">' +
+            '    </div>' +
+            '    <div class="col-md-2">' +
+            '        <input type="text" name="ke[]" class="form-control m-input col-md-2" placeholder="ke">' +
+            '    </div>' +
+            '    <div class="col-md-2">' +
+            '        <input type="text" name="harga[]" class="form-control m-input col-md-2" placeholder="harga">' +
+            '    </div>' +
+            '    <div class="input-group-prepend">' +
+            '        <button class="btn btn-danger" id="DeleteRow" type="button">' +
+            '            <i class="bi bi-trash"></i>' +
+            '            Delete' +
+            '        </button>' +
+            '    </div>' +
+            '</div>';
+
+        $('#newinput').append(newRowAdd);
+    });
+    $("body").on("click", "#DeleteRow", function() {
+        $(this).parents("#row").remove();
+    })
 </script>
 @endpush

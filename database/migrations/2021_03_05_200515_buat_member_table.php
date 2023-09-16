@@ -19,6 +19,7 @@ class BuatMemberTable extends Migration
             $table->string('name');
             $table->text('address')->nullable();
             $table->string('telephone');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

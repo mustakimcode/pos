@@ -30,6 +30,12 @@ class PembelianController extends Controller
             ->addColumn('total_harga', function ($pembelian) {
                 return 'Rp. '. format_uang($pembelian->total_harga);
             })
+            ->addColumn('batch', function ($pembelian) {
+                return $pembelian->batch;
+            })
+            ->addColumn('expired_date', function ($pembelian) {
+                return $pembelian->expired_date;
+            })
             ->addColumn('bayar', function ($pembelian) {
                 return 'Rp. '. format_uang($pembelian->bayar);
             })
@@ -101,6 +107,12 @@ class PembelianController extends Controller
             })
             ->addColumn('name', function ($detail) {
                 return $detail->produk->name;
+            })
+            ->addColumn('batch', function ($detail) {
+                return $detail->batch;
+            })
+            ->addColumn('expired_date', function ($detail) {
+                return $detail->expired_date;
             })
             ->addColumn('harga_beli', function ($detail) {
                 return 'Rp. '. format_uang($detail->harga_beli);

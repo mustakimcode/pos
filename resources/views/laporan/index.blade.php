@@ -29,7 +29,9 @@
                         <th>Penjualan</th>
                         <th>Pembelian</th>
                         <th>Pengeluaran</th>
+                        <th>Jasa Resep</th>
                         <th>Pendapatan</th>
+                        <th>Action</th>
                     </thead>
                 </table>
             </div>
@@ -56,11 +58,14 @@
             },
             columns: [
                 {data: 'DT_RowIndex', searchable: false, sortable: false},
+                {data: 'no'},
                 {data: 'tanggal'},
                 {data: 'penjualan'},
                 {data: 'pembelian'},
                 {data: 'pengeluaran'},
-                {data: 'pendapatan'}
+                {data: 'resep'},
+                {data: 'pendapatan'},
+                {data: 'action'}
             ],
             dom: 'Brt',
             bSort: false,
